@@ -43,21 +43,30 @@ result = job.result()
 
 ####################################################
 
+x = np.array([[0, 1], [1, 0]])
+h = np.array([[1,1], [1,-1]])
 
 outputState = result.get_statevector(qc, decimals=3)
 outputStateNumpy = np.array(outputState)
 outputStateNumpy = [int(x) for x in outputStateNumpy]
 print("\n the random bit value: ", outputStateNumpy)
 
+def matrixGen(outputStateNumpy):
+    if outputStateNumpy == [1,0]:
+        return x
+    elif outputStateNumpy == [0,1]:
+        return h
+
+matrix = matrixGen(outputStateNumpy)
+print(matrix)
+
 
 ################################################
 
 
 # draw the circuit
-qc.draw()
+# qc.draw()
 
 
 #####################################################
-
-
 
