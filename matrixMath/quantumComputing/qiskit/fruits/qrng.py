@@ -44,21 +44,28 @@ result = job.result()
 ####################################################
 
 x = np.array([[0, 1], [1, 0]])
-h = np.array([[1,1], [1,-1]])
+h = np.array([[1, 1], [1, -1]])
 
 outputState = result.get_statevector(qc, decimals=3)
 outputStateNumpy = np.array(outputState)
 outputStateNumpy = [int(x) for x in outputStateNumpy]
-print("\n the random bit value: ", outputStateNumpy)
+
+####################################################
+
+# create a method to take a random bit
+# and produce a new quantum matrix
 
 def matrixGen(outputStateNumpy):
-    if outputStateNumpy == [1,0]:
+    if outputStateNumpy == [1, 0]:
+        print("the x gate: \n")
         return x
-    elif outputStateNumpy == [0,1]:
+    elif outputStateNumpy == [0, 1]:
+        print("the h gate: \n")
         return h
 
+
 matrix = matrixGen(outputStateNumpy)
-print(matrix)
+print(matrix, "\n")
 
 
 ################################################
