@@ -26,7 +26,26 @@ print("X times its transpose is = "
       "\n ", i, "\n")
 
 
-##################################
+#################################
+
+
+# The Z Matrix
+
+z = np.array([[1, 0], [0, -1]])
+print("The Z matrix is a",
+      z.shape, "matrix \n")
+print("Z looks like: \n",
+      z, "\n")
+
+zt = z.transpose()
+print("Zs transpose looks like: \n",
+      zt, "\n")
+
+dot = np.dot(z, zt)
+print("Z times its own transpose: \n", dot)
+
+
+################################
 
 
 # the Hadamard Matrix
@@ -56,9 +75,8 @@ coht = 1/(math.sqrt(2))
 
 # we multiply them
 cohtm = coh*coht
-print("the square of one "
-      "over the root of two"
-      " is \n", cohtm, "\n")
+print("the square of one over the root of two is: "
+      "\n", cohtm, "\n")
 
 # multiply the coefficent product
 # with the hadamard dot product
@@ -70,4 +88,6 @@ print("the cofficient product"
 
 
 ######################################
+
+
 

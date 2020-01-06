@@ -1,3 +1,4 @@
+
 ######################################
 
 from qiskit import \
@@ -11,10 +12,10 @@ import numpy as np
 ################################################
 
 # set up the quantum register with one wire
-quantumRegister = QuantumRegister(1, name='quantumRegister')
+quantumRegister = QuantumRegister(1, name='quantum register')
 
 # set up the classical register with one wire
-classicalRegister = ClassicalRegister(1, name='classicalRegister')
+classicalRegister = ClassicalRegister(1, name='classical register')
 
 # set up the quantum circuit
 qc = QuantumCircuit(quantumRegister, classicalRegister)
@@ -45,11 +46,15 @@ result = job.result()
 
 outputState = result.get_statevector(qc, decimals=3)
 outputStateNumpy = np.array(outputState)
-outputStateNumpy = [int(x) for x in outputState]
-print("\n the random bit value: " , outputStateNumpy)
+outputStateNumpy = [int(x) for x in outputStateNumpy]
+print("\n the random bit value: ", outputStateNumpy)
+
+
+################################################
+
 
 # draw the circuit
-# qc.draw()
+qc.draw()
 
 
 #####################################################
