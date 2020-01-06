@@ -7,15 +7,18 @@ import numpy as np
 
 ########################################################################
 
-
+# define a class
 class tensorCalculator:
 
+    # the init constructor
     def __init__(self, vals):
         self.vals = vals
 
+    # a multiplier function
     def mult(self, inp):
         self.vals = self.vals * inp
 
+    # a dot product function
     def dot(self, inp):
         self.vals = np.dot(self.vals, inp)
 

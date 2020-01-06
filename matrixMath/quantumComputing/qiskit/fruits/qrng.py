@@ -5,6 +5,9 @@ from qiskit import \
     ClassicalRegister, execute, Aer, \
     IBMQ, BasicAer
 
+import numpy as np
+
+
 ################################################
 
 # set up the quantum register with one wire
@@ -32,24 +35,22 @@ qc.measure(quantumRegister, classicalRegister)
 #######################################################
 
 
-backend = BasicAer.get_backend('statevector_simulator')
+backend = BasicAer.get_backend ('statevector_simulator')
 job = execute(qc, backend)
 result = job.result()
 
 
-##############################
-
-
-counts = result.get_counts(qc)
-print('counts:',counts)
-
 ####################################################
 
-outputstate = result.get_statevector(qc, decimals=3)
-print(outputstate)
+
+outputState = result.get_statevector(qc, decimals=3)
+outputStateNumpy = np.array(outputState)
+outputStateNumpy = [int(x) for x in outputState]
+print("\n the random bit value: " , outputStateNumpy)
 
 # draw the circuit
-qc.draw()
+# qc.draw()
+
 
 #####################################################
 
