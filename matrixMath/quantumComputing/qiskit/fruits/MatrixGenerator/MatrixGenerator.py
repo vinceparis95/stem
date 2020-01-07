@@ -47,6 +47,9 @@ result = job.result()
 
 x = np.array([[0, 1], [1, 0]])
 h = np.array([[1, 1], [1, -1]])
+coh = 1/(math.sqrt(2))
+coht = coh
+cohtm = coh*coh
 ht = h.transpose()
 
 
@@ -62,14 +65,18 @@ outputStateNumpy = [int(x) for x in outputStateNumpy]
 
 
 # create a method to take a random bit
-# and produce a new quantum matrix
+# and produce a new unitary matrix
 
 def matrixGen(outputStateNumpy):
     if outputStateNumpy == [1, 0]:
-        print("the x gate: \n")
+        print("the x gate: \n", x, "\n")
+        print("x times transpose \n",
+              np.dot(x,x.transpose()), "\n")
         return x
     elif outputStateNumpy == [0, 1]:
-        print("the h gate: \n")
+        print("the h gate: \n", h, "\n")
+        print("h times transpose \n",
+              np.dot(h, ht)*cohtm, "\n")
         return h
 
 
@@ -87,8 +94,7 @@ print(matrix, "\n")
 #####################################################
 
 
-coh = 1/(math.sqrt(2))
-coht = coh
-cohtm = coh*coh
+
 
 hUnitarityTest = np.dot(h, ht)*cohtm
+
