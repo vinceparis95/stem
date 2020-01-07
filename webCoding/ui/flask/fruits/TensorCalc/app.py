@@ -12,18 +12,20 @@ app = Flask(__name__)
 ##########################
 
 
-# create the main function
+# the app route
 
-# start the app route
 @app.route('/')
 # declare the main function
 def main():
     # return a render of app.html
     return render_template('app.html')
 
+
 ######################################
 
-# create form submission route
+
+# the form submission route
+
 @app.route("/send", methods=['POST'])
 # define send message
 def send():
@@ -51,7 +53,9 @@ def send():
             print("shape: \n ", sum.shape)
             return render_template('app.html', sum=sum)
 
+
 #######################################################
+
 
 if __name__ == '__main__':
     app.run(debug=True)
