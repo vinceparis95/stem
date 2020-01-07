@@ -7,6 +7,7 @@ from qiskit import \
     IBMQ, BasicAer
 
 import numpy as np
+import math
 
 
 ################################################
@@ -43,14 +44,22 @@ result = job.result()
 
 ####################################################
 
+
 x = np.array([[0, 1], [1, 0]])
 h = np.array([[1, 1], [1, -1]])
+ht = h.transpose()
+
+
+####################################################
+
 
 outputState = result.get_statevector(qc, decimals=3)
 outputStateNumpy = np.array(outputState)
 outputStateNumpy = [int(x) for x in outputStateNumpy]
 
+
 ####################################################
+
 
 # create a method to take a random bit
 # and produce a new quantum matrix
@@ -77,3 +86,9 @@ print(matrix, "\n")
 
 #####################################################
 
+
+coh = 1/(math.sqrt(2))
+coht = coh
+cohtm = coh*coh
+
+hUnitarityTest = np.dot(h, ht)*cohtm
