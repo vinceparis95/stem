@@ -12,22 +12,22 @@ import math
 
 ################################################
 
-# set up the quantum register with one wire
+# single wire quantum register
 quantumRegister = QuantumRegister(1, name='quantum register')
 
-# set up the classical register with one wire
+# single wire classical register
 classicalRegister = ClassicalRegister(1, name='classical register')
 
-# set up the quantum circuit
+# the quantum circuit, or score
 qc = QuantumCircuit(quantumRegister, classicalRegister)
 
 ######################################################
 
 
-# write the value to 0
+# quantum value is 0, or | 1, 0 >
 qc.reset(quantumRegister)
 
-# place it in a superposition of 1 and 0
+# superposition the wire between 1 and 0
 qc.h(quantumRegister)
 print(qc)
 
