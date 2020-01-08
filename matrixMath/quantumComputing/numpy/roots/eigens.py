@@ -9,9 +9,6 @@ from matrixMath.quantumComputing.qiskit.\
 ####################################
 
 
-#####################################
-
-
 # matrix spawning from QMG
 print("the matrix is : \n", matrix,"\n")
 print("the matrix times its transpose: \n",
@@ -42,15 +39,18 @@ print("og matrix minus the I multiple: "
 
 
 # find the determinant and difference
+# det = det(A-λI)=0
+# det = matrix
+# det2 = []
+# for x in det:
+#     for y in x:
+#         det2.append(y)
+#
+# print((det2[0]*det2[2]) - (det2[1]*det2[3]))
 
-det = matrix
-det2 = []
-for x in det:
-    for y in x:
-        det2.append(y)
+print("eigenvalues: ", np.linalg.eigvals(np.array(matrix)))
 
-if (det2[0]*det2[2]) == 0 and (det2[1]*det2[3]) == 0:
-    print("cool")
+
 
 ####################################
 
