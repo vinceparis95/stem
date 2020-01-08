@@ -8,7 +8,7 @@ import math
 
 # the X Matrix
 
-x = np.array([[1, 0],[0,1]])
+x = np.array([[1, 0], [0, 1]])
 print("the X Matrix is a ",
       x.shape, " matrix \n")
 print("X looks like: \n", x,
