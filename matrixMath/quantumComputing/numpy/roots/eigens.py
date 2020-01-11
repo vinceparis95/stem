@@ -39,16 +39,25 @@ print("og matrix minus the I multiple: "
 
 
 # find the determinant and difference
-# det = det(A-λI)=0
+# # det = det(A-λI)=0
 # det = matrix
 # det2 = []
 # for x in det:
 #     for y in x:
 #         det2.append(y)
-#
-# print((det2[0]*det2[2]) - (det2[1]*det2[3]))
+# print(det2)
 
-print("eigenvalues: ", np.linalg.eigvals(np.array(matrix)))
+# def isEigen(matrix):
+#     det = matrix
+#     det2 = []
+#     for x in det:
+#         for y in x:
+#             det2.append(y)
+#     if (det2[0]*det2[2]) - (det2[1]*det2[3]) == 0:
+#         print(n, "\n : the eigenvalue")
+#
+# print("eigenvalues: ", np.linalg.eigvals(np.array(matrix)))
+# print(isEigen(matrix))
 
 
 
