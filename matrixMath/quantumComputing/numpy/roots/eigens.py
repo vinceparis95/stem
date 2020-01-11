@@ -19,7 +19,7 @@ print("the matrix shape is: \n",
 
 ####################################
 
-n = 3
+n = 1
 
 # n x n I matrix * scalar λ (lambda)
 i = np.eye(2)
