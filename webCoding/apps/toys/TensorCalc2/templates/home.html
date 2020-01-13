@@ -4,18 +4,54 @@
     <meta charset="utf-8">
     <title>Flask Parent Template</title>
 
-    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='styles/template.css') }}">
 
 </head>
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">First Web App</h1>
-        <strong><nav>
-          <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-          </ul>
-        </nav></strong>
+        <h1 class="logo">Tensor Calculator 2.1</h1>
+        <h2 >pauli matrices</h2>
+        <ul>
+          <li>x: 0, 1, 1, 0 </li>
+          <li>h: 1/root2(1, 1, 1, -1) </li>
+        </ul>
+      </div>
+
+      <div class="container">
+      <div class="container">
+      <form action="/send" method="POST">
+
+        <label for="Number One">tensor one</label>
+        <input
+          type="text"
+          placeholder="tensor one"
+          class="u-full-width"
+          name="num1"
+        />
+
+        <label for="Number Two">tensor two</label>
+        <input
+          type="text"
+          placeholder="tensor two"
+          class="u-full-width"
+          name="num2"
+        />
+
+        <label for="Operation">Operation</label>
+        <select class="u-full-width" name="operation">
+          <option value="unitarity">unitarity</option>
+        </select>
+
+        <input type="submit" value="Calculate" id="calc_btn" />
+        <br />
+        <div class="alert">
+          {{ array1 }}
+          {{ array2 }}
+          {{ sum }}
+        </div>
+      </form>
+      </div>
       </div>
     </header>
 
