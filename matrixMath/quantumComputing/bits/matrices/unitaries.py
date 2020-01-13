@@ -68,7 +68,7 @@ dot = np.dot(h,ht)
 print("the dot of the two matrices is:"
       " \n", dot, "\n")
 
-# these are the coefficients
+# these are the Imaginary coefficients
 # for the og hadamard and its transpose
 coh = 1/(math.sqrt(2))
 coht = 1/(math.sqrt(2))
