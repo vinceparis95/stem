@@ -46,3 +46,23 @@ input {
     margin: 9px;
 }
 
+.animator {
+
+    width: 180px;
+    height:180px;
+    border-radius: 20%;
+    position: absolute;
+    background-color: rgb(1,9,89);
+    opacity: 72%;
+}
+
+
+
+.container2 {
+  width: 360px;
+  height: 360px;
+  border-radius: 10%;
+  position: relative;
+  background: burlywood;
+}
+
