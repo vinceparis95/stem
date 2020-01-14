@@ -8,44 +8,53 @@
 
 </head>
   <body>
-    <header>
+    <div>
       <div class="container">
         <h1 class="logo">Tensor Calculator 2.1</h1>
-        <h2 >pauli matrices</h2>
+      </div>
+      <div class= "container">
+      <h2 >pauli matrices</h2>
         <ul>
-          <li>x: 0, 1, 1, 0 </li>
+          <li>x: 0 1 1 0 </li>
           <li>h: 1/root2(1, 1, 1, -1) </li>
         </ul>
       </div>
 
       <div class="container">
-      <div class="container">
-      <form action="/send" method="POST">
+      <form action="/calc" method="POST">
 
-        <label for="Number One">tensor one</label>
+        <label for="Number One">tensor </label>
         <input
           type="text"
           placeholder="tensor one"
           class="u-full-width"
-          name="num1"
-        />
+          name="num1"/>
 
-
-        <label for="Operation">Operation</label>
-        <select class="u-full-width" name="operation">
+        <label for="Operation">operation </label>
+        <select class="custom-select" name="operation">
           <option value="unitarity">unitarity</option>
+          <option value="eigenvalue">eigenvalue</option>
         </select>
 
         <input type="submit" value="Calculate" id="calc_btn" />
         <br />
+
         <div class="alert">
           {{ array1 }}
           {{ sum }}
         </div>
+
       </form>
       </div>
-      </div>
-    </header>
 
- </body>
+      <div class="container">
+        <button onclick="myFunction()">cell</button>
+         <script type="text/javascript"
+         src="{{ url_for('static', filename='js/features.js') }}">
+         </script>
+      </div>
+
+    </div>
+    </header>
+  </body>
 </html>

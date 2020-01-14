@@ -1,9 +1,48 @@
- body {
+
+
+body {
      padding: 50px 30px 50px 80px;
-     background-color: lightgreen;
+     background-color: chartreuse;
      font-family: "Courier", courier-new, sans-serif;
+
  }
 
   h1 {
     background–color: purple;
   }
+  h2 {
+    color: brown;
+  }
+
+
+input {
+    border: 5px solid white;
+    -webkit-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+
+.custom-select {
+    font-family: Courier;
+    padding: 14px;
+}
+
+.logo {
+    color: brown;
+}
+
+.container {
+    border: 2px solid orangered;
+    padding: 19px;
+    margin: 9px;
+}
+
