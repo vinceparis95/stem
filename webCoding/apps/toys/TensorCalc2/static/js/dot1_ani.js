@@ -5,7 +5,7 @@ function myMove() {
     let pos3 = 0;  let pos4 = 0; let pos7 = 0; let pos8 = 0;
     let R = 90; let G = 95; let B = 190;
 
-    setInterval(frame, 10);
+    setInterval(frame, 12);
 
     function frame() {
         if (pos3 < 180) {
@@ -50,7 +50,7 @@ function myMove2() {
     let pos = 0; let pos2 = 0; let pos5 = 0; let pos6 = 0;
     let R = 90; let G = 95; let B = 190;
 
-    setInterval(frame, 10);
+    setInterval(frame, 12);
 
     function frame() {
         if (pos < 180) {
@@ -68,7 +68,6 @@ function myMove2() {
             R = R + 1; G = G + 2; B = B + 1;
         }
         else if (pos2 == 180) {
-
             pos2++
         } else if (pos2 > 180 && pos5 < 180) {
             pos5++;
