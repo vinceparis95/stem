@@ -2,7 +2,7 @@
 
 body {
      padding: 50px 30px 50px 80px;
-     background-color: chartreuse;
+     background-color: rgb(169, 252, 3);
      font-family: "Courier", courier-new, sans-serif;
 
  }
@@ -47,15 +47,25 @@ input {
 }
 
 .animator {
-
     width: 180px;
     height:180px;
     border-radius: 20%;
     position: absolute;
     background-color: rgb(90,95,190);
     opacity: 72%;
+    display: inline-block;
 }
 
+
+.animator2 {
+    width: 180px;
+    height:180px;
+    border-radius: 20%;
+    position: absolute;
+    background-color: rgb(90,95,190);
+    opacity: 72%;
+    display: inline-block;
+}
 
 
 .container2 {
@@ -64,5 +74,20 @@ input {
   border-radius: 10%;
   position: relative;
   background: burlywood;
+  display: inline-block;
+  opacity: 72%;
+}
+.container3 {
+  width: 360px;
+  height: 360px;
+  border-radius: 10%;
+  position: relative;
+  background: burlywood;
+  display: inline-block;
+  opacity: 72%;
 }
 
+
+.wrapper {
+    border: 1px orangered;
+}

@@ -1,73 +1,99 @@
 <!DOCTYPE html>
+
+
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Flask Parent Template</title>
-
-    <link rel="stylesheet" href="{{ url_for('static',    filename='styles/template.css') }}">
-
+    <link rel="stylesheet" href="
+    {{ url_for('static',
+    filename='styles/template.css') }}">
+    <script src="
+            https://cdnjs.cloudflare.
+            com/ajax/libs/p5.js/0.7.1/p5.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  <body>
-    <div>
-      <div class="container">
+<body>
+<div>
+
+    <!--                Tensor Calculator                  -->
+
+    <div class="container">
         <h1 class="logo">Tensor Calculator 2.1</h1>
-      </div>
-      <div class= "container">
-      <h2 >pauli matrices</h2>
+    </div>
+    <div class= "container">
+        <h2 >pauli matrices</h2>
         <ul>
-          <li>x: 0 1 1 0 </li>
-          <li>h: 1/root2(1, 1, 1, -1) </li>
+            <li>x: 0 1 1 0 </li>
+            <li>h: 1/root2(1, 1, 1, -1) </li>
         </ul>
-      </div>
+    </div>
 
-      <div class="container">
-      <form action="/calc" method="POST">
+    <div class="container">
+        <form action="/calc" method="POST">
 
-        <label for="Number One">tensor </label>
-        <input
-          type="text"
-          placeholder="tensor one"
-          class="u-full-width"
-          name="num1"/>
+            <label for="Number One">tensor </label>
+            <input
+                    type="text"
+                    placeholder="tensor one"
+                    class="u-full-width"
+                    name="num1"/>
 
-        <label for="Operation">operation </label>
-        <select class="custom-select" name="operation">
-          <option value="unitarity">unitarity</option>
-          <option value="eigenvalue">eigenvalue</option>
-        </select>
+            <label for="Operation">operation </label>
+            <select class="custom-select" name="operation">
+                <option value="unitarity">unitarity</option>
+                <option value="eigenvalue">eigenvalue</option>
+            </select>
 
-        <input type="submit" value="Calculate" id="calc_btn" />
-        <br />
+            <input type="submit" value="Calculate" id="calc_btn" />
+            <br />
 
-        <div class="alert">
-          {{ array1 }}
-          {{ sum }}
+            <div class="alert">
+                {{ array1 }}
+                {{ sum }}
+            </div>
+
+        </form>
+    </div>
+
+<!--                 Tensor Animation                   -->
+
+        <button onclick="newFunction()">pop</button>
+        <div id="wrapper">
+            <div class="container3", id="myContainer3">
+                <div class ="animator2", id="myAnimation2"></div>
+            </div>
+            <div class="container2", id="myContainer2">
+                <div class ="animator", id="myAnimation">          </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static',
+      filename='js/dot1_ani.js') }}">
+        </script>
+
+
+<!--                   Cell Adder                      -->
+
+        <div class="container">
+            <button onclick="myFunction()">cell</button>
+            <script type="text/javascript"
+                    src="{{ url_for('static', filename='js/creator1.js') }}">
+            </script>
         </div>
 
-      </form>
-      </div>
-
-      <div class="container">
-        <button onclick="myFunction()">cell</button>
-         <script type="text/javascript"
-                 src="{{ url_for('static', filename='js/features.js') }}">
-         </script>
-      </div>
+<!--        -->
 
 
-      <div class="container2", id="myContainer2">
-
-        <div class ="animator", id="myAnimation">
-
+        <div class="container">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js">
+            </script>
+            <script src="{{ url_for('static', filename='js/score1_ani.js') }}">
+            setup()
+                draw()
+            </script>
         </div>
-
-      </div>
-      <button onclick="newFunction()">pop</button>
-      <script
-              src="{{ url_for('static', filename='js/animation1.js') }}">
-
-      </script>
-
 
     </div>
     </header>
