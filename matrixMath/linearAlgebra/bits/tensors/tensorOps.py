@@ -1,16 +1,18 @@
 import numpy as np
-
+import math
 
 ###############################
-
+x = 1
+y = 2
+z = 3
 
 # the vector
 
-vector = np.array([[1, 2, 3]])
+vector = np.array([[x, y, z]])
 print("original vector: \n", vector)
 
 
-########################
+####################################
 
 
 # transposing the vector
@@ -19,10 +21,10 @@ trvector = np.transpose(vector)
 print("transposed vector: \n", trvector)
 
 
-#########################################
+########################################
 
 
-# dotting the vectors
+# dot of the vectors
 
 print("dot of vectors: \n",
       np.dot(vector, trvector), "\n")
@@ -33,10 +35,11 @@ print("dot of vectors: \n",
 
 # create a matrix
 
-matrix = np.array([[1, 2, 3],
-                   [1, 2, 3],
-                   [1, 2, 3]])
-print("the original matrix: \n", matrix)
+matrix = np.array([[ 1,  1,  1,  1],
+                   [-1,  1, -1,  1],
+                   [-1, -1,  1,  1],
+                   [ 1, -1,  -1, 1]])
+print("original matrix: \n", matrix)
 
 
 #########################################
@@ -52,8 +55,16 @@ print("the transposed matrix: \n", trmatrix)
 
 # dot the matrix with its transpose
 
+dot = np.dot(matrix, trmatrix)
 print("dot of matrices: \n",
-      np.dot(matrix, trmatrix), "\n")
+      dot, "\n")
+
+coh = 1/(math.sqrt(4))
+coht = coh
+cohtm = coh*coht
+# cohtmb = cohtm*cohtm
+i = np.dot(cohtm, dot)
+print("i: \n", i, "\n")
 
 
 ##########################################
