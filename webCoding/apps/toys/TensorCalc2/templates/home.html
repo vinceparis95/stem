@@ -20,27 +20,27 @@
     <!--                Tensor Calculator                  -->
 
     <div class="container">
-        <h1 class="logo">Tensor Calculator 2.1</h1>
+        <h1 class="logo">TensorCalc2.2</h1>
     </div>
-    <div class= "container">
-        <h2 >pauli matrices</h2>
-        <ul>
-            <li>x: 0 1 1 0 </li>
-            <li>h: 1/root2(1, 1, 1, -1) </li>
-        </ul>
-    </div>
-
+<!--    <div class= "container">-->
+<!--        <h4 >unitary matrices</h4>-->
+<!--        <ul>-->
+<!--            <li>x: 0 1 1 0 </li>-->
+<!--            <li>h: 1/root2(1, 1, 1, -1) </li>-->
+<!--        </ul>-->
+<!--    </div>-->
     <div class="container">
         <form action="/calc" method="POST">
-
-            <label for="Number One">tensor </label>
+<!--            <label for="Number One">enter tensor</label>-->
+            <h4>enter tensor</h4>
             <input
                     type="text"
                     placeholder="tensor one"
                     class="u-full-width"
                     name="num1"/>
+            <br>
+            <h4>select operation</h4>
 
-            <label for="Operation">operation </label>
             <select class="custom-select" name="operation">
                 <option value="unitarity">unitarity</option>
                 <option value="eigenvalue">eigenvalue</option>
@@ -48,12 +48,12 @@
 
             <input type="submit" value="Calculate" id="calc_btn" />
             <br />
+            <br>
 
             <div class="alert">
                 {{ array1 }}
                 {{ sum }}
             </div>
-
         </form>
     </div>
 
@@ -70,9 +70,7 @@
             </div>
             <div class="container2", id="myContainer2">
                 <div class ="animator", id="myAnimation"></div>
-
             </div>
-
         </div>
         <script src="{{ url_for('static',
       filename='js/matrixSliders.js') }}">
@@ -85,7 +83,7 @@
 <br>
     <br>
 
-        <div >
+        <div class="p5Canvas" >
                     <h5 class="logo">quantum score</h5>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js">

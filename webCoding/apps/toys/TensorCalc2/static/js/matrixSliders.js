@@ -3,9 +3,9 @@
 function myMove() {
     const elem = document.getElementById("myAnimation2");
     let pos3 = 0;  let pos4 = 0; let pos7 = 0; let pos8 = 0;
-    let R = 90; let G = 95; let B = 190;
+    let R = 163; let G = 166; let B = 255;
 
-    setInterval(frame, 12);
+    setInterval(frame, 9);
 
     function frame() {
         if (pos3 < 180) {
@@ -48,9 +48,9 @@ function myMove() {
 function myMove2() {
     const elem = document.getElementById("myAnimation");
     let pos = 0; let pos2 = 0; let pos5 = 0; let pos6 = 0;
-    let R = 90; let G = 95; let B = 190;
+    let R = 163; let G = 166; let B = 255;
 
-    setInterval(frame, 12);
+    setInterval(frame, 9);
 
     function frame() {
         if (pos < 180) {

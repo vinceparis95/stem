@@ -12,6 +12,7 @@ body {
   }
   h2 {
     color: brown;
+
   }
 
   p {
@@ -49,10 +50,12 @@ button {
 }
 
 .container {
-    border: 2px solid orangered;
-    padding: 19px;
+
+    padding: 9px;
     margin: 9px;
     position: relative;
+    border-radius: 2%;
+    rgb(201, 255, 38);
 }
 
 .animator {
@@ -60,8 +63,8 @@ button {
     height:180px;
     border-radius: 20%;
     position: absolute;
-    background-color: rgb(90,95,190);
-    opacity: 72%;
+    background-color: rgb(163, 166, 255);
+    opacity: 60%;
     display: inline-block;
 }
 
@@ -71,9 +74,10 @@ button {
     height:180px;
     border-radius: 20%;
     position: absolute;
-    background-color: rgb(90,95,190);
-    opacity: 72%;
+    background-color: rgb(163, 166, 255);
+    opacity: 60%;
     display: inline-block;
+
 }
 
 
@@ -82,21 +86,27 @@ button {
   height: 360px;
   border-radius: 10%;
   position: relative;
-  background: burlywood;
+  background: navajowhite;
   display: inline-block;
-  opacity: 72%;
+  opacity: 60%;
 }
 .container3 {
   width: 360px;
   height: 360px;
   border-radius: 10%;
   position: relative;
-  background: burlywood;
+  background: navajowhite;
   display: inline-block;
-  opacity: 72%;
+  opacity: 60%;
 }
 
 
 .wrapper {
     border: 1px orangered;
+}
+
+.p5Canvas {
+    border-radius: 7%;
+    width: 360px;
+    opacity: 45%;
 }
