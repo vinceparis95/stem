@@ -59,7 +59,11 @@
 
 <!--                 Tensor Animation                   -->
 
+    <br>
+    <h5 class="logo">matrix sliders</h5>
         <button onclick="newFunction()">pop</button>
+<br>
+    <br>
         <div id="wrapper">
             <div class="container3", id="myContainer3">
                 <div class ="animator2", id="myAnimation2"></div>
@@ -71,31 +75,35 @@
 
         </div>
         <script src="{{ url_for('static',
-      filename='js/dot1_ani.js') }}">
+      filename='js/matrixSliders.js') }}">
         </script>
+        </div>
+
+
+<!--        -->
+
+<br>
+    <br>
+
+        <div >
+                    <h5 class="logo">quantum score</h5>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js">
+            </script>
+            <script src="{{ url_for('static', filename='js/quantumScore.js') }}">
+
+            </script>
+        </div>
 
 
 <!--                   Cell Adder                      -->
 
-        <div class="container">
-            <button onclick="myFunction()">cell</button>
-            <script type="text/javascript"
-                    src="{{ url_for('static', filename='js/creator1.js') }}">
-            </script>
-        </div>
-
-<!--        -->
-
-
-        <div class="container">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js">
-            </script>
-            <script src="{{ url_for('static', filename='js/score1_ani.js') }}">
-            setup()
-                draw()
-            </script>
-        </div>
+<!--        <div class="container">-->
+<!--            <button onclick="myFunction()">cell</button>-->
+<!--            <script type="text/javascript"-->
+<!--                    src="{{ url_for('static', filename='js/creator1.js') }}">-->
+<!--            </script>-->
+<!--        </div>-->
 
     </div>
     </header>

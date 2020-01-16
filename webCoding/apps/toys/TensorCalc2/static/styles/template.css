@@ -40,6 +40,10 @@ input {
     padding: 14px;
 }
 
+button {
+    white-space: pre-line;
+}
+
 .logo {
     color: brown;
 }
@@ -48,6 +52,7 @@ input {
     border: 2px solid orangered;
     padding: 19px;
     margin: 9px;
+    position: relative;
 }
 
 .animator {
