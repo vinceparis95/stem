@@ -1,69 +1,78 @@
-////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
 
 
-// The Wires and the Score board
+// The Wires and Ops
 
 
-// Spring drawing constants for top bar
+// wire constants
 let springHeight = 9,
     springDist = 60,
-    left,
-    right,
+    left, right,
     maxHeight = 300,
     minHeight = 0,
     over = false,
     move = false;
     move_i = 0;
 
-
-// Spring simulation constants
+// wire physics constants
 let M = 0.8,  // Mass
     K = 0.3,  // Spring constant
     D = 0.94, // Damping
     R = 90;  // Rest position
 
-// Spring simulation variables
+// empty arrays
 let strings = [];
-// let ps = R,   // Position
-//     vs = 0.0, // Velocity
-//     as = 0,   // Acceleration
-//     f = 0;    // Force
 
 
+/////////////////////////////////////////////////////////
+
+
+// the Setup Method
 function setup() {
     createCanvas(360, 360);
     rectMode(CORNERS);
-    c = color('rgb(193, 255, 130)');
-    fill(c);
+    fill(243,234,211);
     noStroke();
     left = width / 2 - 400;
     right = width / 2 + 400;
-
     for (let i = 0; i < 4; ++i) {
         let ps = R + springDist * i;
         strings.push({ps : ps, vs : 0.0, as : 0, f : 0, R : ps})
     }
+      x = width / 2;
+    y = springHeight;
+
 }
+
+
+//////////////////////////////////////////////////////////
 
 
 function draw() {
-    background(191, 209, 255);
+    background(191, 219, 255);
     updateSpring();
-    drawWire();
+    drawWire(4);
+
+
+
 }
 
-function drawWire() {
-    for (let i = 0; i < strings.length; ++i) {
+function drawWire(input) {
+    for (let i = 0; i < input; ++i) {
         let y = strings[i].ps;
         rect(left, y, right, y+springHeight);
     }
 }
 
+
+/////////////////////////////////////////////////////////////
+
+
 function updateSpring() {
     // Update the spring position
     for (let i = 0; i < strings.length; ++i) {
         let st = strings[i];
-
         if ( i != move_i || !move ) {
             st.f = -K * ( st.ps - st.R ); // f=-ky
             st.as = st.f / M;             // Set the acceleration, f=ma == a=f/m
@@ -75,7 +84,6 @@ function updateSpring() {
             st.vs = 0.0;
         }
     }
-
     // Test if mouse if over the top bar
     over = false;
     for (let i = 0; i < strings.length; ++i) {
@@ -95,10 +103,15 @@ function updateSpring() {
 
 function mousePressed() {
   if (over) {
-    move = true;
+    move = true
   }
 }
 
 function mouseReleased() {
   move = false;
+
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+

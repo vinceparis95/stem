@@ -106,7 +106,15 @@ button {
 }
 
 .p5Canvas {
+
     border-radius: 7%;
     width: 360px;
-    opacity: 45%;
+    opacity: 69%;
+}
+
+.qops {
+
+    border-radius: 7%;
+    width: 360px;
+    opacity: 69%;
 }
