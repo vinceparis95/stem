@@ -110,11 +110,17 @@ button {
     border-radius: 7%;
     width: 360px;
     opacity: 69%;
+    position: relative;;
 }
 
 .qops {
-
-    border-radius: 7%;
-    width: 360px;
-    opacity: 69%;
+    border-color: lavender;
+    border-style: solid;
+    width: 27px;
+    height:27px;
+    border-radius: 25%;
+    position: relative;
+    background-color: rgb(163, 166, 255);
+    opacity: 95%;
+    display: inline-block;
 }

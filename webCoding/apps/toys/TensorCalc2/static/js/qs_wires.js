@@ -21,8 +21,9 @@ let M = 0.8,  // Mass
     D = 0.94, // Damping
     R = 90;  // Rest position
 
-// empty arrays
+// empty strings array
 let strings = [];
+
 
 
 /////////////////////////////////////////////////////////
@@ -32,19 +33,17 @@ let strings = [];
 function setup() {
     createCanvas(360, 360);
     rectMode(CORNERS);
-    fill(243,234,211);
+    fill(243, 234, 211);
     noStroke();
     left = width / 2 - 400;
     right = width / 2 + 400;
     for (let i = 0; i < 4; ++i) {
         let ps = R + springDist * i;
-        strings.push({ps : ps, vs : 0.0, as : 0, f : 0, R : ps})
+        strings.push({ps: ps, vs: 0.0, as: 0, f: 0, R: ps})
     }
-      x = width / 2;
+    x = width / 2;
     y = springHeight;
-
 }
-
 
 //////////////////////////////////////////////////////////
 
@@ -53,9 +52,6 @@ function draw() {
     background(191, 219, 255);
     updateSpring();
     drawWire(4);
-
-
-
 }
 
 function drawWire(input) {
@@ -66,7 +62,9 @@ function drawWire(input) {
 }
 
 
+
 /////////////////////////////////////////////////////////////
+
 
 
 function updateSpring() {
