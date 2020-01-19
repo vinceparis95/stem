@@ -6,7 +6,7 @@
 
 
 // wire constants
-let springHeight = 9,
+let springHeight = 12,
     springDist = 60,
     left, right,
     maxHeight = 300,
@@ -16,13 +16,14 @@ let springHeight = 9,
     move_i = 0;
 
 // wire physics constants
-let M = 0.8,  // Mass
+let M = 0.7,  // Mass
     K = 0.3,  // Spring constant
     D = 0.94, // Damping
     R = 90;  // Rest position
 
 // empty strings array
 let strings = [];
+
 
 
 
@@ -33,7 +34,7 @@ let strings = [];
 function setup() {
     createCanvas(360, 360);
     rectMode(CORNERS);
-    fill(243, 234, 211);
+    fill(146, 255, 69);
     noStroke();
     left = width / 2 - 400;
     right = width / 2 + 400;
@@ -112,4 +113,5 @@ function mouseReleased() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////////////////////////////////////
 

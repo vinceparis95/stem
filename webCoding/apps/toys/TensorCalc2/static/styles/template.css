@@ -42,7 +42,7 @@ input {
 }
 
 button {
-    white-space: pre-line;
+
 }
 
 .logo {
@@ -109,9 +109,8 @@ button {
 
     border-radius: 7%;
     width: 360px;
-    opacity: 69%;
-    position: relative;;
-}
+    opacity: 60%;
+    }
 
 .qops {
     border-color: lavender;
@@ -124,3 +123,18 @@ button {
     opacity: 95%;
     display: inline-block;
 }
+
+.qops2 {
+    left: 55px;
+    border-color: #646cff;
+    border-style: solid;
+    width: 27px;
+    height:27px;
+    border-radius: 25%;
+    position: relative;
+    background-color: rgb(255, 147, 205);
+    opacity: 81%;
+    display: inline-block;
+}
+
+
