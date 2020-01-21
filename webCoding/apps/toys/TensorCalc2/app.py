@@ -14,6 +14,8 @@ def home():
 
 ########################################
 
+#calc
+
 @app.route("/calc", methods=['POST'])
 # define send message
 def calc():
@@ -33,6 +35,15 @@ def calc():
             eigen = eigens2(array1)
             print(eigen)
             return render_template('home.html', sum=eigen)
+
+
+###################################################
+
+@app.route("/channel2")
+# test channel
+def channel2():
+    return render_template('channel2.html')
+
 
 
 ######################################
