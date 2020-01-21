@@ -3,7 +3,7 @@ import numpy as np
 
 ####################################
 
-# create a scalar
+# a scalar
 
 scalar = np.array([1])
 print("scalar: \n", scalar, "\n")
@@ -11,7 +11,7 @@ print("scalar: \n", scalar, "\n")
 
 #####################################
 
-# create a vector
+# a vector
 
 vector = np.array([1, 2, 3])
 print("vector: ", vector)
@@ -20,7 +20,7 @@ print("shape: \n", vector.shape, "\n")
 
 ######################################
 
-# create a matrix
+# a matrix
 
 matrix = np.array([[1, 2, 3],
                    [1, 2, 3],
@@ -31,7 +31,7 @@ print("shape: \n", matrix.shape, "\n")
 
 #######################################
 
-# create a 3-D tensor
+# a 3-D tensor
 
 tensor = np.array([[[1, 2, 3],
                     [1, 2, 3],
