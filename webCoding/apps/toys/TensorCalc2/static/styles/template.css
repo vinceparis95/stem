@@ -42,7 +42,7 @@ input {
 }
 
 button {
-
+    border-radius: 2px;
 }
 
 .logo {

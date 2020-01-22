@@ -9,15 +9,19 @@ class LikeButton extends React.Component {
   }
 
   render() {
+
     if (this.state.liked) {
-      return 'You liked this.';
+      return <div class="qops2" id="myQops2">
+          <script src="{{ url_for('static', filename='js/qs_ops.js')}}"> </script>
+              </div>
     }
 
     return (
         <button onClick={() => this.setState({ liked: true })}>
-          Like
-        </button>
+          Allahuabha</button>
+
     );
+
   }
 }
 
