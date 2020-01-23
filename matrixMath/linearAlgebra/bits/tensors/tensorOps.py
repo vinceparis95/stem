@@ -78,16 +78,25 @@ import math
 
 ##########################################
 
+
+# build two vectors
 vector0 = np.array([[1,0]])
 vector1 = np.array([[0,1]])
 vector0 = np.transpose(vector0)
-
 print (vector0.shape, vector1.shape)
-print(vector0,"\n \n", vector1,"\n \n", )
+print("the vectors:\n", vector0,"\n", vector1,"\n \n")
 
+# give their tensor product
 tensor = np.kron(vector0,vector1)
-print(tensor)
+print("the tensor product:\n", tensor, "\n")
+print(tensor.shape,"\n \n", )
 
-tensor2 = tensor.transpose()
+# create the x gate
+matrix = np.array([[0,1], [1,0]])
+print("the x matrix:\n", matrix, "\n")
+print(matrix.shape, "\n \n")
 
-print(tensor2.shape)
+# give inner for the 0 vector and the x matrix
+print("the inner product of the x gate "
+      "and the state 1 vector:\n",
+      np.dot(matrix,vector0))
