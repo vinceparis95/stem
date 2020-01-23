@@ -100,3 +100,6 @@ print(matrix.shape, "\n \n")
 print("the inner product of the x gate "
       "and the state 1 vector:\n",
       np.dot(matrix,vector0))
+
+
+######################################################
