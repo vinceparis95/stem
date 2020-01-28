@@ -39,10 +39,10 @@ def calc():
 
 ###################################################
 
-@app.route("/channel2")
+@app.route("/jawn")
 # test channel
 def channel2():
-    return render_template('channel2.html')
+    return render_template('jawn.html')
 
 
 
