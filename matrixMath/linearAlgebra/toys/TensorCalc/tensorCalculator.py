@@ -3,7 +3,7 @@ import numpy as np
 
 ########################################################################
 
-# Build a pythonic module that performs some linlog algebra on real data
+# Build a pythonic module that performs some linlog algebra on real real_data
 
 ########################################################################
 
