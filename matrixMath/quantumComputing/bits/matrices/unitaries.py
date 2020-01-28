@@ -90,7 +90,10 @@ import math
 ######################################
 
 
+
 def isUnitary(matrix):
       tmatrix = matrix.transpose()
       i = np.matmul(matrix, tmatrix)
+      print(i)
       return i
+
