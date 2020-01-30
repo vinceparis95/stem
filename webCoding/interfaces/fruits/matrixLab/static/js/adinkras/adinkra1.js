@@ -3,7 +3,7 @@
 ///////////////////////////////////////////
 
 var adinkra = anime.timeline({
-    loop:true,
+    loop:false,
   duration:405
 })
 
@@ -20,7 +20,7 @@ function makeAdinkra() {
                 value: '*=3',
                 easing: 'easeInOutQuad'
             },
-            width: 19,
+            width: 19
             // autoplay: true,
         })
 
