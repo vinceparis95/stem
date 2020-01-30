@@ -35,8 +35,27 @@ input {
     padding: 14px;
 }
 button {
-    border-radius: 2px;
+    font-family: Courier, cursive;
+    color: #a4a3cd;
+    padding: 5px;
+    border-color: #d2ff6c;
+    /*background-color: #ffb174;*/
 }
+@keyframes jiggle {
+ 45%, 65% {
+    transform: scale(1.0, 1.0)
+  }
+  50% {
+    transform: scale(1.1, 0.9)
+  }
+  55% {
+    transform: scale(0.9, 1.1) translate(0, -5px)
+  }
+  60% {
+    transform: scale(1.0, 1.0) translate(0, -5px)
+  }
+}
+
 .logo {
     color: orangered;
     opacity: 81%;
@@ -151,6 +170,7 @@ button {
   background: #59ffb0;
   display: inline-block;
   opacity: 45%;
+  /*animation: jiggle 1.9s ease-in;*/
 }
 
 
@@ -162,8 +182,10 @@ button {
 
     border-radius: 7%;
     width: 360px;
-    opacity: 60%;
+    opacity: 45%;
     }
+
+
 
 .qops {
     border-color: lavender;
@@ -185,7 +207,7 @@ button {
     border-radius: 25%;
     position: relative;
     background-color: rgb(255, 147, 205);
-    opacity: 81%;
+    opacity: 60%;
     display: inline-block;
 }
 

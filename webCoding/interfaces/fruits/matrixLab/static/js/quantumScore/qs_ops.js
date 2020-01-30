@@ -27,7 +27,7 @@ function xgate() {
 
     }
     function frame2() {
-        if (pos3 < 169) {
+        if (pos3 < 184) {
             pos3++;
             elem.style.top = pos3 + 'px';
             elem.style.backgroundColor = "rgb(" + R + ", " + G + ", " + B + ")";
@@ -50,7 +50,7 @@ function hadamard() {
 
 
     function frame() {
-        if (pos3 < 314) {
+        if (pos3 < 321) {
             pos3++;
             elem.style.top = pos3 + 'px';
             // elem.style.backgroundColor = "rgb(" + R + ", " + G + ", " + B + ")";
