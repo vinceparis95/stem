@@ -1,10 +1,12 @@
 import numpy as np
 from matrixMath.quantumComputing.bits.matrices.unitaries import isUnitary
+
+
 #################################################
 
 
-
 #################################################
+
 
 # a cnot on a three qubit system
 

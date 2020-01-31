@@ -1,5 +1,5 @@
 import numpy as np
-from matrixMath.quantumComputing.toys.matrixGenerator.MatrixGenerator import isUnitary, matrix
+from matrixMath.quantumComputing.fruits.matrixGenerator.MatrixGenerator import isUnitary, matrix
 
 #####################################
 
