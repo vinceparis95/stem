@@ -1,5 +1,5 @@
 import numpy as np
-from matrixMath.quantumComputing.bits.matrices.unitaries import isUnitary
+from matrixMath.quantumComputing.bytes.matrices.unitaries import isUnitary
 
 
 #################################################

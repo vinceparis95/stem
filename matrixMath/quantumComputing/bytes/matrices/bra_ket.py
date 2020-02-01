@@ -5,17 +5,13 @@ import math
 
 ###########################
 
-# Dirac state 0
-
-array = np.array([[1,0]])
-
-array2 = array.transpose()
-
-print(array,"\n", array2)
-
+# Dirac State 0
 # | 0 } = [[ 1,]
 #          [ 0 ]]
 
+array = np.array([[1,0]])
+array2 = array.transpose()
+print(array,"\n", array2)
 
 matrix = np.array([[1,0],
                    [0,1]])
@@ -23,8 +19,7 @@ matrix = np.array([[1,0],
 
 ##############################
 
-# Dirac state 1
-
+# Dirac State 1
 # | 1 } = [[ 0,]
 #          [ 1 ]]
 matrixt = matrix.transpose()
@@ -35,7 +30,8 @@ matrixt = matrix.transpose()
 
 ##############################
 
-# Dirac | 0 } + | 1 }
+# Dirac Hadamard
+#       | 0 } + | 1 }
 #       _____________
 #           root2
 
@@ -56,3 +52,5 @@ hcoefficientmul = hcoefficient*hcoefficient
 # print the squared coefficient with the dot
 print(hcoefficientmul*dot)
 
+
+#############################################

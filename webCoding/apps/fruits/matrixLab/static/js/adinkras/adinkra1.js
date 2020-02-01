@@ -4,7 +4,7 @@
 
 var adinkra = anime.timeline({
     loop:false,
-  duration:405
+  duration:45
 })
 
 ///////////////////////////////////////////
