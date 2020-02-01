@@ -17,25 +17,25 @@ import math
 ################################################
 
 
-# single wire quantum register
-quantumRegister = QuantumRegister(1, name='quantum register')
+# single wire qi register
+quantumRegister = QuantumRegister(1, name='qi register')
 
 # single wire classical register
 classicalRegister = ClassicalRegister(1, name='classical register')
 
-# the quantum circuit, or score
+# the qi circuit, or score
 qc = QuantumCircuit(quantumRegister, classicalRegister)
 
 
 ######################################################
 
 
-# quantum value is 0, or | 1, 0 >
+# qi value is 0, or | 1, 0 >
 qc.reset(quantumRegister)
 
 # superposition the wire between 1 and 0
 qc.h(quantumRegister)
-# print(quantum)
+# print(qi)
 
 qc.measure(quantumRegister, classicalRegister)
 
@@ -125,6 +125,6 @@ def isUnitary(unitaryMatrix):
 
 
 # draw the circuit
-# quantum.draw()
+# qi.draw()
 
 

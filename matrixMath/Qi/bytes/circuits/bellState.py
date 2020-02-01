@@ -4,7 +4,7 @@ import cirq
 
 #####################################################
 
-# the Bell State , or the simplest truly quantum state
+# the Bell State , or the simplest truly qi state
 
 ########################################################
 
