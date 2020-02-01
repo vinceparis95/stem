@@ -65,7 +65,7 @@ print("the transpose of the hadamard: ",
 
 # do the matmul
 dot = np.dot(h,ht)
-print("the dot of the two matrices is:"
+print("the dot of the two qubits is:"
       " \n", dot, "\n")
 
 # these are the Imaginary coefficients
