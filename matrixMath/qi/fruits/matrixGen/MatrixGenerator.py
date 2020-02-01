@@ -35,7 +35,7 @@ qc.reset(quantumRegister)
 
 # superposition the wire between 1 and 0
 qc.h(quantumRegister)
-# print(qc)
+# print(quantum)
 
 qc.measure(quantumRegister, classicalRegister)
 
@@ -125,6 +125,6 @@ def isUnitary(unitaryMatrix):
 
 
 # draw the circuit
-# qc.draw()
+# quantum.draw()
 
 
