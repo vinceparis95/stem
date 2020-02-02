@@ -1,6 +1,6 @@
 ###########################################################
 
-from matrixMath.Qi.bytes.qubits.qubitTest import isUnitary
+from matrixMath.Qi.bytes.qubit.qubitTest import isUnitary
 import numpy as np
 import math
 
