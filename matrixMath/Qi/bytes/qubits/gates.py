@@ -1,10 +1,14 @@
-###################
+###########################################################
 
 from matrixMath.Qi.bytes.qubits.qubitTest import isUnitary
 import numpy as np
 import math
 
 ####################################
+
+# G a t e s
+
+#################################
 
 # the X Matrix
 
