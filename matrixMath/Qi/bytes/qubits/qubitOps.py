@@ -37,19 +37,11 @@ dot = np.dot(z, zt)
 h = np.array([[1, 1],
               [1, -1]])
 
-print("the Hadamard Matrix: "
-      "\n", h, "\n")
-
 # the transpose of the Hadamard
 ht = h.transpose()
-# the transpose equals the original matrix
-print("the transpose of the hadamard: ",
-      "\n", ht, "\n")
 
 # do the matmul
 dot = np.dot(h,ht)
-print("the dot of the two qubits is:"
-      " \n", dot, "\n")
 
 # these are the Imaginary coefficients
 # for the og hadamard and its transpose
@@ -58,20 +50,71 @@ coht = 1/(math.sqrt(2))
 
 # we multiply them
 cohtm = coh*coht
-print("the square of one over the root of two is: "
-      "\n", cohtm, "\n")
 
 # multiply the coefficent product
 # with the hadamard dot product
 i = cohtm*dot
-print("the cofficient product"
-      "times the dot product "
-      "equals the identity matrix: \n",
-      i, "\n")
 
 
 ######################################
 
 
 
+import numpy as np
+import math
+
+##############################
+
+
+###########################
+
+# Dirac State 0
+# | 0 } = [[ 1,]
+#          [ 0 ]]
+
+array = np.array([[1,0]])
+array2 = array.transpose()
+print(array,"\n", array2)
+
+matrix = np.array([[1,0],
+                   [0,1]])
+
+
+##############################
+
+# Dirac State 1
+# | 1 } = [[ 0,]
+#          [ 1 ]]
+matrixt = matrix.transpose()
+
+
+# print(matrixt)
+
+
+##############################
+
+# Dirac Hadamard
+#       | 0 } + | 1 }
+#       _____________
+#           root2
+
+# matrix   [[1, 1],
+#          [ 1,-1]])
+
+# create the basic matrix
+h = np.array([[1, 1],
+              [1, -1]])
+# get the matrix transpose
+htranspose = h.transpose()
+# get the haddy coefficient
+hcoefficient = 1/(math.sqrt(2))
+# dot the matrix with its transpose
+dot = np.dot(h,htranspose)
+# square the coefficient
+hcoefficientmul = hcoefficient*hcoefficient
+# print the squared coefficient with the dot
+print(hcoefficientmul*dot)
+
+
+#############################################
 
