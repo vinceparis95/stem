@@ -86,9 +86,9 @@ vector0 = np.transpose(vector0)
 print (vector0.shape, vector1.shape)
 print("the vectors:\n", vector0,"\n", vector1,"\n \n")
 
-# give their tensor product
+# give their matrix product
 tensor = np.kron(vector0,vector1)
-print("the tensor product:\n", tensor, "\n")
+print("the matrix product:\n", tensor, "\n")
 print(tensor.shape,"\n \n", )
 
 # create the x gate
