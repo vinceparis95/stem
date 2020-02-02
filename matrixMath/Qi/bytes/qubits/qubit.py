@@ -2,9 +2,9 @@
 import numpy as np
 import math
 
-##############################
+#########################
 
-# The Qubit
+# the Q u b i t
 
 ###########################
 
@@ -12,12 +12,7 @@ import math
 # | 0 } = [[ 1,]
 #          [ 0 ]]
 
-array = np.array([[1,0]])
-array2 = array.transpose()
-print(array,"\n", array2)
-
-matrix = np.array([[1,0],
-                   [0,1]])
+state1 = np.array([[1,0]])
 
 
 ##############################
@@ -25,10 +20,7 @@ matrix = np.array([[1,0],
 # Dirac State 1
 # | 1 } = [[ 0,]
 #          [ 1 ]]
-matrixt = matrix.transpose()
+state2 = np.array([[0,1]])
 
 
-# print(matrixt)
-
-
-#############################################
+#############################
