@@ -101,6 +101,7 @@ matrixt = matrix.transpose()
 # matrix   [[1, 1],
 #          [ 1,-1]])
 
+
 # create the basic matrix
 h = np.array([[1, 1],
               [1, -1]])
