@@ -1,76 +1,84 @@
+###################
+
+from matrixMath.Qi.bytes.qubits.qubitTest import isUnitary
 import numpy as np
-from matrixMath.Qi.fruits.matrixGen.MatrixGenerator import isUnitary, matrix
+import math
 
-#####################################
+###############################################
 
-# Eigenvalues
+# the X Matrix
 
-####################################
+x = np.array([[1, 0], [0, 1]])
 
+# the transpose of the X
+xt = x.transpose()
 
-#spawn matrix from MatrixGenerator
-print("the matrix is : \n", matrix,"\n")
-print("the matrix times its transpose: \n",
-      isUnitary(matrix), "\n")
-print("the matrix shape is: \n",
-      matrix.shape, "\n")
-
-
-###########################################
-
-
-#the Lambda
-
-# set lambda to 1
-l = 1
-print("lamda: \n", l, "\n")
-
-# n x n I matrix * scalar λ (lambda)
-i = np.eye(2)
-print("the i matrix: \n", i, "\n")
-
-# dot lambda with i matrix for lam diagonal
-lam = (np.dot(i, l))
-print("i multiplied with lamda: \n", lam, "\n")
-
-
-# subtraction of I multiple from A matrix
-matrix = matrix - lam
-print("U matrix minus the Lam multiple: "
-      "\n", matrix, "\n")
+print(isUnitary(x))
 
 
 ###############################################
 
 
-# The Eigenvalue
+#The Z Matrix
+
+z = np.array([[1, 0], [0, -1]])
+print("The Z matrix is a",
+      z.shape, "matrix \n")
+print("Z looks like: \n",
+      z, "\n")
+
+zt = z.transpose()
+print("Zs transpose looks like: \n",
+      zt, "\n")
+
+dot = np.dot(z, zt)
+print("Z times its own transpose: \n", dot)
 
 
-#find the determinant and difference
-#det = det(A-λI)=0
-def isEigen(matrix):
-    det = matrix
-    det2 = []
-    for x in det:
-        for y in x:
-            det2.append(y)
-    print("the vectorized matrix: \n", det2, "\n")
-    det3 = (det2[0] * det2[2]) - (det2[1] * det2[3])
-    if det3 == 0:
-        print("\n Lambda (", l, ") is an eigenvalue")
-        return det3
-    elif det3 != 0:
-        print("Lambda (", l, ") is not an eigenvalue")
-        return det3
-
-def eigens2(matrix):
-    return np.linalg.eigvals(np.array(matrix))
-
-# print(isEigen(matrix))
-print("\neigenvalues: ", np.linalg.eigvals(np.array(matrix)))
+################################
 
 
-#########################################################
+# the Hadamard Matrix
 
 
-# values of det(A-λI ) = 0
+h = np.array([[1, 1],
+              [1, -1]])
+
+print("the Hadamard Matrix: "
+      "\n", h, "\n")
+
+# the transpose of the Hadamard
+ht = h.transpose()
+# the transpose equals the original matrix
+print("the transpose of the hadamard: ",
+      "\n", ht, "\n")
+
+# do the matmul
+dot = np.dot(h,ht)
+print("the dot of the two qubits is:"
+      " \n", dot, "\n")
+
+# these are the Imaginary coefficients
+# for the og hadamard and its transpose
+coh = 1/(math.sqrt(2))
+coht = 1/(math.sqrt(2))
+
+# we multiply them
+cohtm = coh*coht
+print("the square of one over the root of two is: "
+      "\n", cohtm, "\n")
+
+# multiply the coefficent product
+# with the hadamard dot product
+i = cohtm*dot
+print("the cofficient product"
+      "times the dot product "
+      "equals the identity matrix: \n",
+      i, "\n")
+
+
+######################################
+
+
+
+
