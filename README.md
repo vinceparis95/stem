@@ -1,20 +1,25 @@
 # buildingBlocks
 a Ruhi-inspired stem program
 
-l i n e a r  a l g e b r a 
+
+linear algebra
 * data
   * graph
   * frame
 * tensor
   * tensor
   * tensorOps
-m a c h i n e L e a r n i n g
+  
+  
+machine learning
 * algorithm
   * linear
   * logistic
 * neuralnet
   * neuralnetwork
-q u a n t u m I n f o r m a t i o n 
+  
+  
+quantum computing
 * qubit
   * qubit
   * gates
