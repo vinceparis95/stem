@@ -4,7 +4,7 @@ from matrixMath.Qi.bytes.qubits.qubitTest import isUnitary
 import numpy as np
 import math
 
-###############################################
+####################################
 
 # the X Matrix
 
@@ -16,23 +16,16 @@ xt = x.transpose()
 print(isUnitary(x))
 
 
-###############################################
+###################################
 
 
 #The Z Matrix
 
 z = np.array([[1, 0], [0, -1]])
-print("The Z matrix is a",
-      z.shape, "matrix \n")
-print("Z looks like: \n",
-      z, "\n")
 
 zt = z.transpose()
-print("Zs transpose looks like: \n",
-      zt, "\n")
 
 dot = np.dot(z, zt)
-print("Z times its own transpose: \n", dot)
 
 
 ################################
