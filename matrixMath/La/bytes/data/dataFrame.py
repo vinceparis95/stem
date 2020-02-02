@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 ################################
 
 
-# Load real_data from your csv
+# Load realdata from your csv
 
 df = pd.read_csv("~/Documents/test.csv")
 print(df)
@@ -16,7 +16,7 @@ print(df)
 ########################################
 
 
-# plot the real_data from the
+# plot the realdata from the
 
 plot = df.plot(x='x', y='y')
 plt.show()

@@ -61,7 +61,7 @@ import math
 # # dot the matrix with its transpose
 #
 # dot = np.dot(matrix, trmatrix)
-# print("dot of matrices: \n",
+# print("dot of qubit: \n",
 #       dot, "\n")
 #
 # coh = 1/(math.sqrt(4))
