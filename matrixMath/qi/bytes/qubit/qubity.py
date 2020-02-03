@@ -21,13 +21,10 @@ x = np.array([[1, 0], [0, 1]])
 
 # set lambda to 1
 l = 2
-
 # n x n I matrix * scalar λ (lambda)
 i = np.eye(2)
-
 # dot lambda with i matrix for lam diagonal
 lam = (np.dot(i, l))
-
 # subtraction of I multiple from A matrix
 x = x - lam
 
@@ -47,7 +44,6 @@ def isEigen(matrix):
         return det3
     elif det3 != 0:
         return det3
-
 
 # simple aeigenvalue getter
 def eigens2(x):
