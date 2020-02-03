@@ -8,7 +8,7 @@ import cirq
 
 ########################################################
 
-# write out the four qubits
+# write out the four qubit
 a = cirq.NamedQubit("a")
 b = cirq.NamedQubit("b")
 c = cirq.NamedQubit("c")
