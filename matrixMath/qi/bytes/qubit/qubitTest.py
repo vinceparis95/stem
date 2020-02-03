@@ -1,7 +1,7 @@
 
 
 import numpy as np
-from matrixMath.Qi.fruits.matrixGen.MatrixGenerator import matrix
+from matrixMath.qi.fruits.matrixGen.MatrixGenerator import matrix
 
 
 ####################################
