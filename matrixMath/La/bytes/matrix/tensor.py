@@ -1,9 +1,12 @@
 import numpy as np
 
+####################################
+
+# The Tensor
 
 ####################################
 
-# a scalar
+# create a scalar
 
 scalar = np.array([1])
 print(scalar.shape)
@@ -11,7 +14,7 @@ print(scalar.shape)
 
 #####################################
 
-# a vector
+# create a vector
 
 vector = np.array([1, 2, 3])
 print(vector.shape)
@@ -19,7 +22,7 @@ print(vector.shape)
 
 ######################################
 
-# a matrix
+# create a matrix
 
 matrix = np.array([[1, 2, 3],
                    [1, 2, 3],
@@ -29,7 +32,7 @@ print(matrix.shape)
 
 #######################################
 
-# a 3-D matrix
+# create a 3-D matrix
 
 tensor = np.array([[[1, 2, 3],
                     [1, 2, 3],
