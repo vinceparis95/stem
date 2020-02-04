@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 
 ################################
 
+# the pandas DataFrame
+
+##################################
 
 # Load data from your csv
 
