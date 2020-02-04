@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
 import numpy as np
-from matrixMath.quantumComputing.bytes.matrices.matrix import isUnitary
-from matrixMath.quantumComputing.bytes.matrices.matrixOps import eigens2
+from matrixMath.qi.bytes.qubit.gate import isUnitary
+from matrixMath.qi.bytes.qubit.qubity import eigens2
 app = Flask(__name__)
 
 #######################################
 
 
-# define the basic_app
+# define the architecture
 @app.route("/")
 def home():
     return render_template("home.html")

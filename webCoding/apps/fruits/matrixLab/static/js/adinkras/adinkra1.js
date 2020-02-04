@@ -135,7 +135,7 @@ function doubleFoldAdinkra() {
 //                 easing: 'easeInOutSine',
 //                 height: {
 //                     value: 57,
-//                     easing: 'linear'
+//                     easing: 'la'
 //                 }
 //
 //             }
