@@ -4,7 +4,7 @@ import cirq
 
 #####################################################
 
-# the Bell State , or the simplest truly Qi state
+# the Bell State , or the simplest truly qi state
 
 ########################################################
 
@@ -21,7 +21,8 @@ d = cirq.NamedQubit("d")
 ops = [cirq.H(a), cirq.H(b),
        cirq.CNOT(b, c),
        cirq.H(b)], \
-      cirq.CCNOT(a,b,c)
+       cirq.CCX(a,b,c)
 circuit = cirq.Circuit.from_ops(ops)
 print(circuit)
+
 
