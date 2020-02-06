@@ -1,6 +1,7 @@
 
+////////////////////////////
 
-
+// qubit with h gate
 
 var state = anime.timeline({
     loop:true,
@@ -46,10 +47,11 @@ function entangle() {
         })
 
     return (
-  <div>Allah'u'Abha
-  </div>
-);
+        <div>Allah'u'Abha
+        </div>
+    );
 
 }
 
 
+/////////////////////////////////
