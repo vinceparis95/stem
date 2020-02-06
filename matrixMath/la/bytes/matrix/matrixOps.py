@@ -1,52 +1,54 @@
 import numpy as np
-import math
 
-###################################
-
-
-# T e n s o r  O p e r a t i o n s
-
-
-##################################
-# the Dot Product
-############################
-
-# create the vector
-
-vector = np.array([[1,0]])
-
-#############################
-
-# transpose the vector
-
-trvector = np.transpose(vector)
-
-###############################
-
-#dot the vectors
-
-np.dot(vector, trvector)
-
-
-################################
-# the Tensor Product
-################################
-
-
-# build two vectors
-vector = np.array([[0,1]])
-vector2 = np.array([[1,0]]).transpose()
-
-######################################
-
-# give their tensor product
-tensor = np.kron(vector,vector2)
 
 #################################
 
-# give their dot product
-dot= np.dot(vector,vector2)
-print(dot)
+# M a t r i x T r a n s f o r m s
+
+#################################
+
+# create a space
+
+vector1 = np.array([[1,2]])
+vector2 = np.array([[3,2]])
+matrix1 = np.array([[3,3],[9,9]])
+matrix2 = np.array([[1,2],[1,5]])
 
 
-##########################
+##################################
+
+# Vector dot product
+
+vectorDotProduct = np.vdot(vector1, vector2)
+
+########################################
+
+# Inner product
+
+innerProduct = np.inner(vector1, vector2)
+
+#########################################
+
+# Outer product
+
+outerProduct = np.outer(vector1, vector2)
+
+###########################################
+
+#Tensor dot product
+
+tensorDotProduct = np.tensordot(matrix1, matrix2)
+
+##################################################
+
+# Kronecker product
+
+kronProduct = np.kron(matrix1, matrix2)
+
+###############################################
+
+print("vectordot: \n", vectorDotProduct, "\n")
+print("inner product:\n", innerProduct, "\n")
+print("outer product: \n", outerProduct, "\n")
+print("tensor dot:\n", tensorDotProduct, "\n")
+print("kron: \n", kronProduct)
