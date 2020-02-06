@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="
+    {{ url_for('static',
+    filename='styles/template.css') }}">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  </head>
+
+
+
+  <body>
+  <h2>q u b i t</h2>
+  <button href="#" onclick="entangle()">entangle</button>
+
+<!--<button href="#" onclick="makeAdinkra()">make</button>-->
+<!--<button href="#" onclick="foldAdinkra()">fold</button>-->
+<!--<button href="#" onclick="doubleFoldAdinkra()">fold2</button>-->
+<!--  <button href="#" onclick="doubleFoldAdinkrab()">fold2</button>-->
+<!--  <div>-->
+<!--    <div id="root"><script type="text/babel" src="{{ url_for('static', filename='js/adinkras/canvas.js')}}"></script></div>-->
+<!--    <div class="container50"></div>-->
+<!--    <div class="container51"></div>-->
+<!--    <div class="container52"></div>-->
+<!--    <div class="container53"></div>-->
+<!--    <script type="text/babel" src="{{ url_for('static', filename='js/adinkras/adinkra1.js')}}"></script>-->
+<!--  </div>-->
+  <div>
+    <div id="root2">
+      <script type="text/babel" src="{{ url_for('static', filename='js/qubits/canvas.js')}}"></script>
+    </div>
+    <div class="container54">
+    </div>
+    <script type="text/babel" src="{{ url_for('static', filename='js/qubits/qubit.js')}}"></script>
+  </div>
+
+  </body>
+</html>
