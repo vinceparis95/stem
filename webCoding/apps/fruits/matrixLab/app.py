@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import numpy as np
 from matrixMath.qi.bytes.qubit.gate import isUnitary
-from matrixMath.qi.bytes.qubit.qubity import eigens2
+from matrixMath.qi.bytes.qubit.qubity import isEigen
 app = Flask(__name__)
 
 #######################################
@@ -32,17 +32,17 @@ def calc():
             print(unitary)
             return render_template('home.html', sum=unitary)
         elif operation == 'eigenvalue':
-            eigen = eigens2(array1)
+            eigen = isEigen(array1)
             print(eigen)
             return render_template('home.html', sum=eigen)
 
 
 ###################################################
 
-@app.route("/adinkra")
+@app.route("/qi")
 # test channel
-def adinkra():
-    return render_template('adinkra.html')
+def qi():
+    return render_template('qi.html')
 
 
 

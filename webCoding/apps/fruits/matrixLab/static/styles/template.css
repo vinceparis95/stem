@@ -9,6 +9,14 @@ h2 {
     color: orangered;
       opacity: 81%;
   }
+
+h3 {
+    margin-left: 36%;
+    margin-top: 200px;
+    color: orangered;
+    opacity: 81%;
+    position: absolute;
+}
 p {
   color: Green;
   vertical-align:top;
@@ -124,6 +132,24 @@ button {
     border-color: coral;
 
 }
+.container5 {
+  width: 180px;
+  height: 180px;
+  border-radius: 19%;
+  position: relative;
+  background: rgb(255, 237, 173);
+  display: inline-block;
+  left: -14px;
+  top: 19px;
+  opacity: 63%;
+
+    border-style: solid;
+    border-width:27px;
+    border-color: rgba(255, 69, 0, 0.58);
+
+
+}
+
 
 
 .container50{
@@ -170,6 +196,19 @@ button {
   background: #59ffb0;
   display: inline-block;
   opacity: 45%;
+  /*animation: jiggle 1.9s ease-in;*/
+}
+
+.container54{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  left: 57px;
+  top:-157px;
+  background: #07ff00;
+  display: flex;
+  opacity: 63%;
   /*animation: jiggle 1.9s ease-in;*/
 }
 
