@@ -9,10 +9,10 @@ import numpy as np
 
 # create a space
 
-vector1 = np.array([[1,2]])
-vector2 = np.array([[3,2]])
-matrix1 = np.array([[3,3],[9,9]])
-matrix2 = np.array([[1,2],[1,5]])
+vector1 = np.array([[1,0]])
+vector2 = np.array([[0,1]])
+matrix1 = np.array([[0,1],[1,0]])
+matrix2 = np.array([[1,0],[0,1]])
 
 
 ##################################
