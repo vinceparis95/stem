@@ -3,7 +3,6 @@ import numpy as np
 import tensorflow as tf
 print(tf.__version__)
 import matplotlib.pyplot as plt
-import seaborn as sns
 from tensorflow.keras.layers import Input, Dense
 from tensorflow.keras.models import Model
 
@@ -13,26 +12,13 @@ from tensorflow.keras.models import Model
 
 ###########################################
 
-
+#
 cols=['Book1',	'Book2','Book3',
       'Book4', 'Book5','Book6','Book7']
 pool = pd.read_csv("~/Desktop/databit3b.csv",
                    names=cols, header=None)
 pool.dropna()
 print(pool.head())
-
-
-###########################################
-
-
-plot_size = plt.rcParams["figure.figsize"]
-plot_size [0] = 4
-plot_size [1] = 5
-plt.rcParams["figure.figsize"] = plot_size
-pool.Book7.value_counts().plot(
-    kind='pie', autopct='%0.05f%%',
-    colors=['lightblue', 'lightgreen'])
-plt.show()
 
 
 ############################################
