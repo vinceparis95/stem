@@ -206,9 +206,8 @@ button {
   position: relative;
   left: 57px;
   top:-157px;
-  background: #07ff00;
-  display: flex;
-  opacity: 60%;
+  background: #0dff02;
+  opacity: 45%;
 ;
   /*animation: jiggle 1.9s ease-in;*/
 }
