@@ -208,7 +208,8 @@ button {
   top:-157px;
   background: #07ff00;
   display: flex;
-  opacity: 63%;
+  opacity: 60%;
+;
   /*animation: jiggle 1.9s ease-in;*/
 }
 

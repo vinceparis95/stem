@@ -5,7 +5,7 @@
 
 var state = anime.timeline({
     loop:true,
-    duration:44
+    duration: 36
 })
 
 
@@ -15,19 +15,8 @@ function entangle() {
         .add({
             targets: '.container54',
             keyframes: [
-                {translateX: -19},
-                {translateX:  19},
-            ],
-            background: 'rgb(255,0,199)',
-            direction: 'alternate',
-            easing: 'linear',
-            autoplay: false
-        })
-        .add({
-            targets: '.container54',
-            keyframes: [
-                {translateX: -19},
-                {translateX:  19},
+                {translateX: -14},
+
             ],
             background: 'rgb(13,255,2)',
             direction: 'alternate',
@@ -37,8 +26,27 @@ function entangle() {
         .add({
             targets: '.container54',
             keyframes: [
-                {translateX: -19},
-                {translateX:  19},
+                {translateX: 14},
+            ],
+            background: 'rgb(255,0,199)',
+            direction: 'alternate',
+            easing: 'linear',
+            autoplay: false
+        })
+        .add({
+            targets: '.container54',
+            keyframes: [
+                {translateX: -14},
+            ],
+            background: 'rgb(13,255,2)',
+            direction: 'alternate',
+            easing: 'linear',
+            autoplay: false
+        })
+        .add({
+            targets: '.container54',
+            keyframes: [
+                {translateX: 14},
             ],
             background: 'rgb(255,0,199)',
             direction: 'alternate',
@@ -52,6 +60,11 @@ function entangle() {
     );
 
 }
+
+
+
+
+
 
 
 /////////////////////////////////
