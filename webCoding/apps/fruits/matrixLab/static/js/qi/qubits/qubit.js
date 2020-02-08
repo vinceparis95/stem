@@ -2,7 +2,7 @@
 ////////////////////////////
 
 // qubit with h gate
-
+//
 var state = anime.timeline({
     loop:true,
     duration: 36
@@ -60,8 +60,6 @@ function entangle() {
     );
 
 }
-
-
 
 
 
