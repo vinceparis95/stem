@@ -1,2 +1,2 @@
 # buildingBlocks
-a Ruhi-inspired stem program
+a JYSEP-inspired stem program
