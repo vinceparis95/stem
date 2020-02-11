@@ -7,7 +7,7 @@ app = Flask(__name__)
 #######################################
 
 
-# define the architecture
+# define the arch
 @app.route("/")
 def home():
     return render_template("home.html")
