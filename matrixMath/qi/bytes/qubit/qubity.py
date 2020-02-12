@@ -7,7 +7,7 @@ import numpy as np
 
 ############################
 
-# create the matrix
+# create the tensor
 
 x = np.array([[0, 1],
               [1, 0]])
@@ -34,11 +34,11 @@ print(isUnitary(x))
 
 # set λ to 1
 l = 1
-# i matrix * λ
+# i tensor * λ
 i = np.eye(2)
 # dot λ with i
 lam = (np.dot(i, l))
-# subtract λi from  matrix
+# subtract λi from  tensor
 z = x - lam
 print(z)
 

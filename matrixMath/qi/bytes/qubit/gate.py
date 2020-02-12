@@ -33,17 +33,17 @@ z = np.array([[1, 0], [0, -1]])
 #       _____________
 #          root2
 #
-# matrix   [[1, 1],
+# tensor   [[1, 1],
 #          [ 1,-1]])
 #
-# create the basic matrix
+# create the basic tensor
 h = np.array([[1, 1],
               [1, -1]])
-# get the matrix transpose
+# get the tensor transpose
 htranspose = h.transpose()
 # get the haddy coefficient
 hcoefficient = 1/(math.sqrt(2))
-# dot the matrix with its transpose
+# dot the tensor with its transpose
 dot = np.dot(h,htranspose)
 # square the coefficient
 hcoefficientmul = hcoefficient*hcoefficient
