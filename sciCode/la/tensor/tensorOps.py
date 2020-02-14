@@ -21,6 +21,7 @@ matrix2 = np.array([[1,0],[0,1]])
 
 vectorDotProduct = np.vdot(vector1, vector2)
 
+
 ########################################
 
 # Inner product
