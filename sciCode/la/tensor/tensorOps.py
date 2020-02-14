@@ -3,7 +3,7 @@ import numpy as np
 
 #################################
 
-# M a t r i x T r a n s f o r m s
+# Tensor Operations
 
 #################################
 
