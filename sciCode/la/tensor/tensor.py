@@ -2,7 +2,7 @@ import numpy as np
 
 ####################################
 
-# The Tensor
+# Computing Tensors
 
 ####################################
 
