@@ -1,0 +1,18 @@
+
+body {
+    background-color: rgba(143, 255, 0, 0.26);
+}
+
+h3 {
+    font-family: Courier;
+    color: brown;
+}
+
+.cell {
+    background-color: rgba(255, 82, 0, 0.19);
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    border-radius: 9px;
+
+}

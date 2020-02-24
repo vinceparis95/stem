@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+    <link rel="stylesheet" href="
+    {{ url_for('static',
+    filename='styles/template.css') }}">
+    <script src="
+            https://cdnjs.cloudflare.
+            com/ajax/libs/p5.js/0.7.1/p5.min.js">
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div>
+
+
+<!--                 M a t r i x   S l i d e r s                    -->
+
+    <br>
+    <h2>matrix multiplications</h2>
+        <button onclick="newFunction()">dot</button>
+<br>
+    <br>
+        <div id="wrapper">
+            <div class="container3", id="myContainer3">
+                <div class ="animator2", id="myAnimation2"></div>
+            </div>
+            <div class="container2", id="myContainer2">
+                <div class ="animator", id="myAnimation"></div>
+            </div>
+        </div>
+        <script src="{{ url_for('static',
+      filename='js/la/matrix/dot.js') }}">
+        </script>
+        </div>
+
+
+
+</body>
+</html>

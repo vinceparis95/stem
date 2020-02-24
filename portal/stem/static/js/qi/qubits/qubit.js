@@ -2,7 +2,7 @@
 ////////////////////////////
 
 // qubit with h gate
-//
+
 var state = anime.timeline({
     loop:true,
     duration: 12
@@ -15,7 +15,7 @@ function entangle() {
         .add({
             targets: '.container54',
             keyframes: [
-                {translateX: -14},
+                {translateX: -19}
 
             ],
             background: 'rgb(255,0,199)',
@@ -26,7 +26,7 @@ function entangle() {
         .add({
             targets: '.container54',
             keyframes: [
-                {translateX: 14},
+                {translateX: 19},
             ],
             background: 'rgb(255,0,199)',
             direction: 'alternate',
@@ -36,7 +36,7 @@ function entangle() {
         .add({
             targets: '.container54',
             keyframes: [
-                {translateX: 7},
+                {translateX: 9.5},
             ],
             background: 'rgb(13,255,2)',
             direction: 'alternate',

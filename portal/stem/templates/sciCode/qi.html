@@ -15,10 +15,9 @@
   </head>
 
 
-
   <body>
-  <h2>q u b i t</h2>
-  <button href="#" onclick="entangle(), haddy()">entangle</button>
+  <h2>computing with qubits</h2>
+  <button href="#" onclick="entangle(), haddy()">superposition</button>
 
 
   <div>
@@ -30,6 +29,26 @@
     <script type="text/babel" src="{{ url_for('static', filename='js/qi/qubits/qubit.js')}}"></script>
   </div>
   <div id="root3"></div>
+<br>
+<div>
+
+    <h2>quantum circuits</h2>
+        <button onclick="newFunct()"> x gate </button>
+    <script src="{{ url_for('static', filename='js/qi/score/qs_wires.js') }}">
+    </script>
+    <div class="qops", id="myQops"></div>
+    <br>
+<button onclick="newFunct2()"> h gate </button>
+    <div class="qops2", id="myQops2"></div>
+    <script src="{{ url_for('static', filename='js/qi/score/qs_ops.js')}}">
+    </script>
+</div>
+    <br>
+<div name="p5Canvas" ></div>
+
+
+</div>
+
 
   </body>
 </html>
@@ -39,10 +58,10 @@
 <!--<button href="#" onclick="doubleFoldAdinkra()">fold2</button>-->
 <!--  <button href="#" onclick="doubleFoldAdinkrab()">fold2</button>-->
 <!--  <div>-->
-<!--    <div id="root"><script type="text/babel" src="{{ url_for('static', filename='js/adinkras/canvas.js')}}"></script></div>-->
+<!--    <div id="root"><script type="text/babel" src="{{ url_for('static', filename='js/string/canvas.js')}}"></script></div>-->
 <!--    <div class="container50"></div>-->
 <!--    <div class="container51"></div>-->
 <!--    <div class="container52"></div>-->
 <!--    <div class="container53"></div>-->
-<!--    <script type="text/babel" src="{{ url_for('static', filename='js/adinkras/adinkra1.js')}}"></script>-->
+<!--    <script type="text/babel" src="{{ url_for('static', filename='js/string/adinkra1.js')}}"></script>-->
 <!--  </div>-->
