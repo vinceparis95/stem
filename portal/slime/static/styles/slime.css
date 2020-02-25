@@ -12,7 +12,22 @@ h3 {
     background-color: rgba(255, 82, 0, 0.19);
     width: 180px;
     height: 180px;
-    display: inline-block;
     border-radius: 9px;
+    position: relative;
 
+}
+.cell2 {
+    background-color: rgba(255, 82, 0, 0.19);
+    width: 180px;
+    height: 180px;
+    border-radius: 9px;
+    right: -95px;
+    top: -95px;
+    position: relative;
+
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }

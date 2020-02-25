@@ -8,7 +8,7 @@ def index():
 
 @app.route('/salam')
 def user():
-    return render_template('group.html')
+    return render_template('slime.html')
 
 if __name__ == "__main__":
 

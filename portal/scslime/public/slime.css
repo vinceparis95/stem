@@ -1,0 +1,48 @@
+
+.container2{
+
+}
+
+h3 {
+    margin-left: 3%;
+    margin-top: 9px;
+    color: rgb(143, 255, 0);
+    opacity: 36%;
+    position: absolute;
+    top: 19px;
+    left: 9px;
+    font-family: 'Montez', sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    transform: translateX(90px) scaleY(3) scaleX(3);
+
+}
+h3b {
+    margin-left: 3%;
+    margin-top: 8px;
+    color: rgb(255, 134, 7);
+    opacity: 36%;
+    position: absolute;
+    top: 19px;
+    left: 9px;
+
+    font-family: 'Montez', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform: translateX(90px) scaleY(3) scaleX(3);
+
+}
+h3c {
+    margin-left: 3%;
+    margin-top: 8px;
+    color: rgb(168, 255, 0);
+    opacity: 19%;
+    position: absolute;
+    top: 19px;
+    left: 9px;
+
+    font-family: 'VT323', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform: translateX(81px) scaleY(3) scaleX(3);
+}
