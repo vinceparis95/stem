@@ -4,45 +4,49 @@
 }
 
 h3 {
-    margin-left: 3%;
-    margin-top: 9px;
-    color: rgb(143, 255, 0);
+    margin-left: 2.5%;
+    margin-top: 27px;
+    color: rgb(177, 255, 0);
     opacity: 36%;
     position: absolute;
     top: 19px;
     left: 9px;
     font-family: 'Montez', sans-serif;
-    font-size: 19px;
-    letter-spacing: 2px;
+    font-size: 36px;
+    letter-spacing: 0px;
     transform: translateX(90px) scaleY(3) scaleX(3);
 
 }
 h3b {
     margin-left: 3%;
-    margin-top: 8px;
+    margin-top: 27px;
     color: rgb(255, 134, 7);
-    opacity: 36%;
+    opacity: 44%;
     position: absolute;
     top: 19px;
     left: 9px;
 
     font-family: 'Montez', sans-serif;
-    font-size: 19px;
-    letter-spacing: 1px;
+    font-size: 36px;
+    letter-spacing: 0px;
     transform: translateX(90px) scaleY(3) scaleX(3);
 
 }
 h3c {
     margin-left: 3%;
-    margin-top: 8px;
+    margin-top: 19px;
     color: rgb(168, 255, 0);
     opacity: 19%;
     position: absolute;
-    top: 19px;
+    top: 27px;
     left: 9px;
 
-    font-family: 'VT323', sans-serif;
-    font-size: 19px;
-    letter-spacing: 1px;
+    font-family: 'Montez', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0px;
     transform: translateX(81px) scaleY(3) scaleX(3);
+}
+
+drop {
+    opacity: 44%;
 }
