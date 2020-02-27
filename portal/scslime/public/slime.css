@@ -3,48 +3,64 @@
 
 }
 
+.root2 {
+    font-family: 'VT323', sans-serif;
+    top:600px;
+    right: 180px;
+    position: absolute;
+}
+
 h3 {
-    margin-left: 2.5%;
+
+    margin-left: 3%;
     margin-top: 27px;
-    color: rgb(177, 255, 0);
     opacity: 36%;
     position: absolute;
+    padding-right: 9px;
     top: 19px;
     left: 9px;
     font-family: 'Montez', sans-serif;
     font-size: 36px;
     letter-spacing: 0px;
     transform: translateX(90px) scaleY(3) scaleX(3);
-
+    background: -webkit-linear-gradient( #A8FF00,#913AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h3b {
     margin-left: 3%;
     margin-top: 27px;
-    color: rgb(255, 134, 7);
-    opacity: 44%;
+    /*color: rgb(255, 134, 7);*/
+    opacity: 19%;
     position: absolute;
+    padding-right: 9px;
+
     top: 19px;
     left: 9px;
-
     font-family: 'Montez', sans-serif;
     font-size: 36px;
     letter-spacing: 0px;
     transform: translateX(90px) scaleY(3) scaleX(3);
-
+    background: -webkit-linear-gradient( #A8FF00,#FF8607);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 h3c {
     margin-left: 3%;
-    margin-top: 19px;
+    margin-top: 27px;
     color: rgb(168, 255, 0);
     opacity: 19%;
     position: absolute;
-    top: 27px;
-    left: 9px;
+    padding-right: 9px;
 
+    top: 19px;
+    left: 9px;
     font-family: 'Montez', sans-serif;
     font-size: 36px;
     letter-spacing: 0px;
-    transform: translateX(81px) scaleY(3) scaleX(3);
+    transform: translateX(92px) scaleY(3) scaleX(3);
+
 }
 
 drop {

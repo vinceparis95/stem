@@ -1,17 +1,12 @@
 import React, {useState} from 'react';
-// import {DragDropContext, Draggable, Droppable} from 'react-beautiful-dnd'
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd'
 import uuid from 'uuid/v4'
 
 const book1 = [
-        {id: uuid(), content: 'sam'},
-        {id: uuid(), content: 'ron'},
-        {id: uuid(), content: 'layla'},
-    // {id: uuid(), content: 'north carolina'},
-  // {id: uuid(), content: 'tanna'},
-  // {id: uuid(), content: 'lubumbashi'},
-  // {id: uuid(), content: 'papua new guinea'},
-  // {id: uuid(), content: 'toronto'}
+    {id: uuid(), content: 'sam'},
+    {id: uuid(), content: 'ron'},
+    {id: uuid(), content: 'layla'},
+    {id: uuid(), content: 'najiarry'}
 ];
 const book2 = [
     {id: uuid(), content: 'ikeem'},
@@ -19,13 +14,7 @@ const book2 = [
     {id: uuid(), content: 'mohamed'},
     {id: uuid(), content: 'apollo'},
     {id: uuid(), content: 'ethan'},
-    {id: uuid(), content: 'kenny'},
-
-  // {id: uuid(), content: 'Whoever possesseth power over anything must elevate it to its uttermost perfection that it not be deprived of its own paradise. '},
-  // {id: uuid(), content: 'Ye dwell in one world'},
-  // {id: uuid(), content: 'Be ye as the fingers of one hand '},
-  // {id: uuid(), content: 'Ye are all the leaves of one tree '},
-  // {id: uuid(), content: 'The source of crafts, sciences and arts is the power of reflection'}
+    {id: uuid(), content: 'kenny'}
 
 ];
 const book3 = [
@@ -84,80 +73,82 @@ const onDragEnd = (result, columns, setColumns ) => {
             }
         })
     }
-
-}
+};
 
 function App() {
-  const [columns, setColumns] = useState(clusterColumns);
-  return (
-      <div>
-        <div style={{display: 'flex', justifyContent: 'left', height: '95%', position: "relative",
-          top: 19, left: 90, opacity: '27%'}}>
-          <DragDropContext onDragEnd={result => onDragEnd(result, columns, setColumns)}>
-            {Object.entries(columns).map(([id, column]) => {
-              return (
-                  <div style={{display: 'flex', flexDirection: 'column', alignItems:'center', 
-                  fontFamily: 'Montez, sans-serif', color: '#913aff', fontSize: 27, padding:0}}><h2  style={{fontSize:(19*3), height: 45}}>{column.name}</h2>
-                    <div style={{margin: 2}}>
-                      <Droppable droppableId={id} key={id} >
-                    {(provided, snapshot) => {
-                      return (
-                          <div {...provided.droppableProps}
-                               ref={provided.innerRef}
-                               style={{
-                                 background: 'rgba(145,58,255,0.45)',
-                                 padding: 9,
-                                 width: 270,
-                                 minHeight: 19,
-                                 opacity: '90%',
-                                 borderRadius: '7px'
-                               }}
-                          >
-                            {column.items.map((item, index) => {
-                                  return (
-                                      <Draggable key={item.id} draggableId={item.id} index={index}>
+    const [columns, setColumns] = useState(clusterColumns);
+    return (
+        <div>
+            <div style={{display: 'flex', justifyContent: 'left', height: '95%', position: "relative",
+                top: 5, left: 90, opacity: '27%'}}>
+                <DragDropContext onDragEnd={result => onDragEnd(result, columns, setColumns)}>
+                    {Object.entries(columns).map(([id, column]) => {
+                        return (
+                            <div style={{display: 'flex', flexDirection: 'column', alignItems:'center',
+                                fontFamily: 'Montez, sans-serif', color: '#913aff', fontSize: 27, padding:5, borderRadius: '19px',
+                            }}><h2  style={{fontSize:(19*3), height: 45}}>{column.name}</h2>
+                                <h2  style={{fontSize:(19*3), height: 45, top:'9px', position:'absolute', opacity:'60%', color:'#ffa0f9'}}>{column.name}</h2>
+                                <div style={{margin: 2}}>
+                                    <Droppable droppableId={id} key={id} >
                                         {(provided, snapshot) => {
-                                          return (
-                                              <div
-                                                  ref={provided.innerRef}
-                                                  {...provided.draggableProps}
-                                                  {...provided.dragHandleProps}
-                                                  style={{
-                                                    opacity: '90%',
-                                                    userSelect: 'none',
-                                                    padding: 19,
-                                                    margin: '0 0 9px 0',
-                                                    backgroundColor: snapshot.isDragging ? '#54ffff':'#b3f542',
-                                                    color: 'rgba(132,47,0,0.96)' ,
-                                                    fontFamily: 'Montez',
-                                                    fontSize: 36,
-                                                    borderRadius: '9px',
+                                            return (
+                                                <div {...provided.droppableProps}
+                                                     ref={provided.innerRef}
+                                                     style={{
+                                                         padding: 9,
+                                                         width: 190,
+                                                         minHeight: 9,
+                                                         opacity: '95%',
+                                                         borderRadius: '9px',
+                                                         background: 'linear-gradient(to right bottom, rgba(196, 181, 255, 1), rgba(132,47,0,0.27)',
 
-                                                    ...provided.draggableProps.style
-                                                  }}
-                                              >
-                                                {item.content}
-                                              </div>
+                                                     }}
+                                                >
+                                                    {column.items.map((item, index) => {
+                                                            return (
+                                                                <Draggable key={item.id} draggableId={item.id} index={index}>
+                                                                    {(provided, snapshot) => {
+                                                                        return (
+                                                                            <div
+                                                                                ref={provided.innerRef}
+                                                                                {...provided.draggableProps}
+                                                                                {...provided.dragHandleProps}
+                                                                                style={{
+                                                                                    opacity: '95%',
+                                                                                    userSelect: 'none',
+                                                                                    padding: 19,
+                                                                                    margin: '0px 0px 3px 0px',
+                                                                                    backgroundColor: snapshot.isDragging ? '#54ffff':'#b3f542',
+                                                                                    background: 'linear-gradient(to right bottom, rgba(84, 255, 255, 0.63), rgba(179, 245, 66, 0.81)',
+                                                                                    color: 'rgb(115,38,0)' ,
+                                                                                    fontFamily: 'Montez',
+                                                                                    fontSize: 36,
+                                                                                    borderRadius: '9px',
+                                                                                    ...provided.draggableProps.style
+                                                                                }}
+                                                                            >
+                                                                                {item.content}
+                                                                            </div>
 
-                                          )
+                                                                        )
+                                                                    }}
+                                                                </Draggable>
+                                                            )
+                                                        }
+                                                    )}
+                                                    {provided.placeholder}
+                                                </div>
+                                            )
                                         }}
-                                      </Draggable>
-                                  )
-                                }
-                            )}
-                              {provided.placeholder}
-                          </div>
-                      )
-                    }}
-                  </Droppable>
-                  </div>
-                      </div>
-              )
-            })}
-          </DragDropContext>
+                                    </Droppable>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </DragDropContext>
+            </div>
         </div>
-      </div>
-  );
+    );
 }
 
 export default App;
