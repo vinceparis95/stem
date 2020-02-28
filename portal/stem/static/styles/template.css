@@ -4,10 +4,28 @@ body {
      background-color: rgba(169, 252, 3, 0.69);
      font-family: "Courier", courier-new, sans-serif;
 
+
+
  }
+
+button {
+
+}
+h1 {
+    position: relative;
+    opacity:60%;
+    background: -webkit-linear-gradient( rgba(255, 61, 12, 0.82), rgba(255, 69, 0, 0.61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        transform: translateY(-60px)
+  }
 h2 {
-    color: orangered;
-      opacity: 81%;
+    position: absolute;
+    opacity:19%;
+    background: -webkit-linear-gradient( rgba(255, 61, 12, 0.82), rgba(255, 69, 0, 0.61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        transform: translateY(-60px);
   }
 
 h3 {
@@ -17,11 +35,6 @@ h3 {
     opacity: 81%;
     position: absolute;
 }
-p {
-  color: Green;
-  vertical-align:top;
-}
-
 
 input {
     border: 5px solid white;
@@ -42,12 +55,8 @@ input {
     font-family: Courier;
     padding: 14px;
 }
-button {
-    font-family: Courier, cursive;
-    color: #a4a3cd;
-    padding: 5px;
-    border-color: #d2ff6c;
-    /*background-color: #ffb174;*/
+#button {
+    border-color: #913aff;
 }
 @keyframes jiggle {
  45%, 65% {
@@ -64,18 +73,12 @@ button {
   }
 }
 
-.logo {
-    color: orangered;
-    opacity: 81%;
-}
-
-
 .animator {
     width: 180px;
     height:180px;
     border-radius: 20%;
     position: absolute;
-    background-color: rgb(163, 166, 255);
+    background-color: rgba(163, 166, 255, 0.6);
     opacity: 60%;
     display: inline-block;
 }
@@ -84,9 +87,10 @@ button {
     height:180px;
     border-radius: 20%;
     position: absolute;
-    background-color: rgb(163, 166, 255);
+    background-color: rgba(163, 166, 255, 0.61);
     opacity: 60%;
     display: inline-block;
+
 
 }
 
@@ -99,29 +103,37 @@ button {
     rgb(201, 255, 38);
 }
 .container2 {
-  width: 360px;
-  height: 360px;
-  border-radius: 10%;
-  position: relative;
-  background: navajowhite;
-  display: inline-block;
-  opacity: 60%;
+    width: 360px;
+    height: 360px;
+    border-radius: 12%;
+    position: relative;
+    background: rgba(145, 58, 255, 0.09);
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(168, 255, 0, 0.19);
+
+
 }
 .container3 {
-  width: 360px;
-  height: 360px;
-  border-radius: 10%;
-  position: relative;
-  background: navajowhite;
-  display: inline-block;
-  opacity: 60%;
+    width: 360px;
+    height: 360px;
+    border-radius: 12%;
+    position: relative;
+    background: rgba(145, 58, 255, 0.09);
+    display: inline-block;
+    opacity: 90%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(168, 255, 0, 0.19);
+
 }
 .container4 {
-  width: 360px;
-  height: 360px;
-  border-radius: 10%;
-  position: relative;
-  background: #008b2a;
+    width: 360px;
+    height: 360px;
+    border-radius: 10%;
+    position: relative;
+    background: #008b2a;
   display: inline-block;
   left: -14px;
   top: 19px;
@@ -137,15 +149,15 @@ button {
   height: 180px;
   border-radius: 19%;
   position: relative;
-  background: rgb(255, 237, 173);
+  background: rgba(255, 249, 192, 0.6);
   display: inline-block;
   left: -14px;
   top: 19px;
-  opacity: 63%;
+  opacity: 19%;
 
     border-style: solid;
     border-width:27px;
-    border-color: rgba(255, 69, 0, 0.58);
+    border-color: rgba(255, 145, 39, 0.6);
 
 
 }
@@ -170,7 +182,7 @@ button {
   position: relative;
   left: 190px;
   top:-60px;
-  background: #9fb8ff;
+  background: #a8ff00;
   display: inline-block;
   opacity: 450%;
 }
@@ -181,7 +193,7 @@ button {
   position: relative;
   left:32px;
   top:63px;
-  background: #f8beff;
+  background: #ff4500;
   display: inline-block;
   opacity: 45%;
 
@@ -205,8 +217,8 @@ button {
   border-radius: 50%;
   position: relative;
   left: 57px;
-  top:-157px;
-  background: #0dff02;
+  top:-144px;
+  background: rgba(13, 255, 2, 0.6);
   opacity: 45%;
 ;
   /*animation: jiggle 1.9s ease-in;*/
@@ -218,16 +230,16 @@ button {
 }
 
 .p5Canvas {
-
+    color: #a8ff00;
     border-radius: 7%;
     width: 360px;
-    opacity: 45%;
+    opacity: 36%;
     }
 
 
 
 .qops {
-    border-color: lavender;
+    border-color: rgba(168, 255, 0, 0.6);
     border-style: solid;
     width: 27px;
     height:27px;
@@ -239,13 +251,13 @@ button {
 }
 .qops2 {
     left: 55px;
-    border-color: #646cff;
+    border-color: rgba(168, 255, 0, 0.6);
     border-style: solid;
     width: 27px;
     height:27px;
     border-radius: 25%;
     position: relative;
-    background-color: rgb(255, 147, 205);
+    background-color: rgba(145, 58, 255, 0.6);
     opacity: 60%;
     display: inline-block;
 }

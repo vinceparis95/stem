@@ -10,23 +10,13 @@ app = Flask(__name__)
 ############################################
 
 
-# App routes for SciCode path
+# App routes for path
 
 
-@app.route('/la')
-def la():
-    return render_template('sciCode/la.html')
-
-
-@app.route('/ml')
-def mL():
-    return render_template('sciCode/ml.html')
-
-
-@app.route("/qi")
+@app.route("/stem")
 # test channel
 def qi():
-    return render_template('sciCode/qi.html')
+    return render_template('stem.html')
 
 
 #############################################

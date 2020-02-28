@@ -5,12 +5,11 @@ class Cell extends React.Component {
     render() {
         return (
             <form>
-
                 <input
                     type="text" style={{
-                        display:'flex',
+                    display:'flex',
                     position:'relative',
-                        top: '-360px',
+                    top: '-360px',
                     right:'95px',
                     fontFamily: "VT323",
                     width:'144px',

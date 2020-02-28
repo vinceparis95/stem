@@ -23,7 +23,7 @@ h3 {
     font-size: 36px;
     letter-spacing: 0px;
     transform: translateX(90px) scaleY(3) scaleX(3);
-    background: -webkit-linear-gradient( #A8FF00,#913AFF);
+    background: -webkit-linear-gradient( #A8FF00, #ff9127);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

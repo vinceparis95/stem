@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/template.css') }}">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez|Press+Start+2P|VT323&display=swap" rel="stylesheet">
+    <title> s t e m </title>
+</head>
+
+
+<body style="background:-webkit-linear-gradient( rgba(168,255,0,0.45),rgba(145,58,255,0.45));
+    font-family: 'Press Start 2P';
+    font-size: 27px;
+    opacity: 95%">
+
+<h1> s t e m </h1>
+<!--                 M a t r i x   S l i d e r s                    -->
+
+<br>
+<h2>linear algebra </h2>
+<h2 style="transform: translateY(-61px) translateX(1px)"> linear algebra </h2>
+<h2 style="transform: translateY(-62px) translateX(2px);"> linear algebra </h2>
+<br>
+<br>
+<button onclick="newFunction()" style="font-family: 'Press Start 2P'; font-size: 14px;
+background:-webkit-radial-gradient( rgba(168,255,0,0.45),rgba(168,255,0,0.09)); border-radius: 9%;
+border-color: rgba(159,184,255,0.09); border-style: solid;color: orangered; opacity:45%;"  >dot product</button>
+<br>
+<br>
+<div id="wrapper">
+    <div class="container3", id="myContainer3">
+        <div class ="animator2", id="myAnimation2"></div>
+    </div>
+    <div class="container2", id="myContainer2">
+        <div class ="animator", id="myAnimation"></div>
+    </div>
+</div>
+<script src="{{ url_for('static',
+      filename='js/dot.js') }}">
+</script>
+</div>
+<br>
+<br>
+
+
+<!--                    Q u b i t  V i e w                                       -->
+<br>
+<br>
+<br>
+<h2>quantum computing</h2>
+<h2 style="transform: translateY(-61px) translateX(1px)">quantum computing </h2>
+<h2 style="transform: translateY(-62px) translateX(2px)">quantum computing </h2>
+<br>
+<br>
+<button onclick="entangle()" style="font-family: 'Press Start 2P'; color: orangered; opacity:45%;
+font-size: 14px; border-style: solid; background:-webkit-radial-gradient( rgba(168,255,0,0.45),rgba(168,255,0,0.09));
+border-radius: 9%; border-color: rgba(159,184,255,0.09)" >superposition</button>
+<div>
+    <div id="root2">
+        <script type="text/babel" src="{{ url_for('static', filename='js/canvas.js')}}"></script>
+    </div>
+    <div class="container54">
+    </div>
+    <script type="text/babel" src="{{ url_for('static', filename='js/qubit.js')}}"></script>
+</div>
+<div id="root3"></div>
+<div>
+
+    <button onclick="newFunct()"style="font-family: 'Press Start 2P'; font-size: 14px;
+background:-webkit-radial-gradient( rgba(168,255,0,0.45),rgba(168,255,0,0.09));
+border-radius: 9%;border-style: solid;border-color: rgba(159,184,255,0.09);
+color: orangered; opacity:45%;" > X-Gate </button>
+    <script src="{{ url_for('static', filename='js/qs_wires.js') }}">
+    </script>
+    <div class="qops", id="myQops"></div>
+    <br>
+    <button onclick="newFunct2()"style="font-family: 'Press Start 2P'; font-size: 14px;
+background:-webkit-radial-gradient( rgba(168,255,0,0.45),rgba(168,255,0,0.09));
+ border-radius: 9%;border-style: solid;border-color: rgba(159,184,255,0.09);color: orangered;
+ opacity:45%;" > H-Gate </button>
+    <div class="qops2", id="myQops2"></div>
+    <script src="{{ url_for('static', filename='js/qs_ops.js')}}">
+    </script>
+</div>
+<br>
+<div name="p5Canvas" ></div>
+
+</div>
+
+</body>
+</html>
+
+<!--<button href="#" onclick="makeAdinkra()">make</button>-->
+<!--<button href="#" onclick="foldAdinkra()">fold</button>-->
+<!--<button href="#" onclick="doubleFoldAdinkra()">fold2</button>-->
+<!--  <button href="#" onclick="doubleFoldAdinkrab()">fold2</button>-->
+<!--  <div>-->
+<!--    <div id="root"><script type="text/babel" src="{{ url_for('static', filename='js/string/canvas.js')}}"></script></div>-->
+<!--    <div class="container50"></div>-->
+<!--    <div class="container51"></div>-->
+<!--    <div class="container52"></div>-->
+<!--    <div class="container53"></div>-->
+<!--    <script type="text/babel" src="{{ url_for('static', filename='js/string/adinkra1.js')}}"></script>-->
+<!--  </div>-->

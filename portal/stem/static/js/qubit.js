@@ -5,9 +5,8 @@
 
 var state = anime.timeline({
     loop:true,
-    duration: 12
-})
-
+    duration: 27
+});
 
 
 function entangle() {
@@ -23,26 +22,17 @@ function entangle() {
             easing: 'linear',
             autoplay: false
         })
-        .add({
+                .add({
             targets: '.container54',
             keyframes: [
                 {translateX: 19},
-            ],
-            background: 'rgb(255,0,199)',
-            direction: 'alternate',
-            easing: 'linear',
-            autoplay: false
-        })
-        .add({
-            targets: '.container54',
-            keyframes: [
-                {translateX: 9.5},
             ],
             background: 'rgb(13,255,2)',
             direction: 'alternate',
             easing: 'linear',
             autoplay: false
-        })
+        });
+
 
 
     return (

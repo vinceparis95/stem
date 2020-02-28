@@ -34,7 +34,6 @@ let strings = [];
 function setup() {
     createCanvas(360, 360);
     rectMode(CORNERS);
-    fill(146, 255, 69);
     noStroke();
     left = width / 2 - 400;
     right = width / 2 + 400;
