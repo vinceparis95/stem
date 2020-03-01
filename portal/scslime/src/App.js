@@ -2,28 +2,27 @@ import React, {useState} from 'react';
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd'
 import uuid from 'uuid/v4'
 
-const book1 = [
-    {id: uuid(), content: 'sam'},
-    {id: uuid(), content: 'ron'},
-    {id: uuid(), content: 'layla'},
-    {id: uuid(), content: 'najiarry'}
-];
+const book0 = [];
+const book1 = [];
 const book2 = [
-    {id: uuid(), content: 'ikeem'},
-    {id: uuid(), content: 'kelsey'},
-    {id: uuid(), content: 'mohamed'},
-    {id: uuid(), content: 'apollo'},
-    {id: uuid(), content: 'ethan'},
-    {id: uuid(), content: 'kenny'}
+    // {id: uuid(), content: 'ikeem'}
+    ];
 
-];
-const book3 = [
-    {id: uuid(), content: 'tayana'},
-    {id: uuid(), content: 'miles'},
-];
-
-const clusterColumns =
+const preKets =
     {
+        [uuid()]: {
+            name: 'pre',
+            items: book0
+        },
+
+    };
+
+const kets =
+    {
+        [uuid()]: {
+            name: '  ', // invisible character
+            items: book0
+        },
         [uuid()]: {
             name: 'Book 1',
             items: book1
@@ -32,11 +31,9 @@ const clusterColumns =
             name: 'Book 2',
             items: book2
         },
-        [uuid()]: {
-            name: 'Book 3',
-            items: book3
-        }
     };
+
+const clusterKeys = Object.keys(kets);
 
 const onDragEnd = (result, columns, setColumns ) => {
     if(!result.destination ) return;
@@ -75,19 +72,50 @@ const onDragEnd = (result, columns, setColumns ) => {
     }
 };
 
-function App() {
-    const [columns, setColumns] = useState(clusterColumns);
+function Console({ onAdd }) {
+    const [value, setValue] = useState('   ');
+    const onChange = ({ target: { value }}) => setValue(value);
     return (
-        <div>
-            <div style={{display: 'flex', justifyContent: 'left', height: '95%', position: "relative",
+        <div style={{ transform: "translateX(81px) translateY(-144px)", height: '81px', position: "absolute", opacity: '45%'}}>
+            <button onClick={onAdd(value)} style={{zIndex: '-0', color: 'rgba(255, 0, 216, 0.9)',borderColor: 'transparent', fontFamily: 'Montez', borderRadius: '27px',
+                fontSize: '60px', width: '81px', transform: 'translateY(190px) translateX(9px)',background: '-webkit-radial-gradient(rgba(255, 0, 216, 0.19), rgba(168, 255, 0, 0.0))'}}> + </button>
+            {/*<input style={{fontSize: '27px', fontFamily: 'Montez', borderColor: 'transparent', borderRadius: '9px', opacity:'45%',*/}
+            {/*    height: '27px', width: '117px', background: 'linear-gradient(to right bottom, rgba(196, 181, 255, 1), rgba(132,47,0,0.27)',transform: 'translateY(261px) translateX(-203px)'*/}
+            {/*}} value={value} onChange={onChange} placeholder="" />*/}
+        </div>
+    );
+}
+
+function App() {
+    const [columns, setColumns] = useState(kets);
+
+    const onAdd = (value) => () => {
+        setColumns((columns) => {
+            const nC = {...columns};
+            // get first book id
+            const id = clusterKeys[0];
+            const c = { ...columns[id] }
+            // console.log({ c });
+            const ci = [...c.items];
+            ci.push({ id: uuid(), content: value });
+            c.items = ci;
+            nC[id] = c;
+            return nC;
+        });
+    };
+    return (
+        <div style={{position:'relative', top: '27px'}}>
+            <Console onAdd={onAdd} />
+            <div style={{display: 'flex', height: '95%', position: "absolute",
                 top: 5, left: 90, opacity: '27%'}}>
                 <DragDropContext onDragEnd={result => onDragEnd(result, columns, setColumns)}>
                     {Object.entries(columns).map(([id, column]) => {
                         return (
-                            <div style={{display: 'flex', flexDirection: 'column', alignItems:'center',
+                            <div key={id} style={{display: 'flex', flexDirection: 'column', alignItems:'center',
                                 fontFamily: 'Montez, sans-serif', color: '#913aff', fontSize: 27, padding:5, borderRadius: '19px',
                             }}><h2  style={{fontSize:(19*3), height: 45}}>{column.name}</h2>
-                                <h2  style={{fontSize:(19*3), height: 45, top:'9px', position:'absolute', opacity:'60%', color:'#ffa0f9'}}>{column.name}</h2>
+                                <h2  style={{fontSize:(19*3), height: 45, top:'9px', position:'absolute',
+                                    opacity:'60%', color:'#ffa0f9'}}>{column.name}</h2>
                                 <div style={{margin: 2}}>
                                     <Droppable droppableId={id} key={id} >
                                         {(provided, snapshot) => {
@@ -96,7 +124,7 @@ function App() {
                                                      ref={provided.innerRef}
                                                      style={{
                                                          padding: 9,
-                                                         width: 190,
+                                                         width: 144,
                                                          minHeight: 9,
                                                          opacity: '95%',
                                                          borderRadius: '9px',
@@ -108,11 +136,16 @@ function App() {
                                                             return (
                                                                 <Draggable key={item.id} draggableId={item.id} index={index}>
                                                                     {(provided, snapshot) => {
+
                                                                         return (
                                                                             <div
+                                                                                onClick contentEditable={true}
+
+
                                                                                 ref={provided.innerRef}
                                                                                 {...provided.draggableProps}
                                                                                 {...provided.dragHandleProps}
+
                                                                                 style={{
                                                                                     opacity: '95%',
                                                                                     userSelect: 'none',
@@ -120,16 +153,14 @@ function App() {
                                                                                     margin: '0px 0px 3px 0px',
                                                                                     backgroundColor: snapshot.isDragging ? '#54ffff':'#b3f542',
                                                                                     background: 'linear-gradient(to right bottom, rgba(84, 255, 255, 0.63), rgba(179, 245, 66, 0.81)',
-                                                                                    color: 'rgb(115,38,0)' ,
+                                                                                    color: 'rgb(75,29,0)' ,
                                                                                     fontFamily: 'Montez',
-                                                                                    fontSize: 36,
+                                                                                    fontSize: 45,
                                                                                     borderRadius: '9px',
                                                                                     ...provided.draggableProps.style
-                                                                                }}
-                                                                            >
+                                                                                }} >
                                                                                 {item.content}
                                                                             </div>
-
                                                                         )
                                                                     }}
                                                                 </Draggable>
@@ -152,3 +183,4 @@ function App() {
 }
 
 export default App;
+
