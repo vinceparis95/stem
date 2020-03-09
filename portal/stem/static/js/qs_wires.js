@@ -5,8 +5,10 @@
 // The Wires and Ops
 
 
+
+
 // wire constants
-let springHeight = 12,
+let springHeight = 18,
     springDist = 60,
     left, right,
     maxHeight = 300,
@@ -16,9 +18,9 @@ let springHeight = 12,
     move_i = 0;
 
 // wire physics constants
-let M = 0.7,  // Mass
-    K = 0.3,  // Spring constant
-    D = 0.94, // Damping
+let M = 1.4,  // Mass
+    K = 0.27,  // Spring constant
+    D = 0.95, // Damping
     R = 90;  // Rest position
 
 // empty strings array
@@ -35,6 +37,8 @@ function setup() {
     createCanvas(360, 360);
     rectMode(CORNERS);
     noStroke();
+    fill(95,190,0,200)
+
     left = width / 2 - 400;
     right = width / 2 + 400;
     for (let i = 0; i < 4; ++i) {
@@ -49,7 +53,7 @@ function setup() {
 
 
 function draw() {
-    background(191, 219, 255);
+    background(145,58,255);
     updateSpring();
     drawWire(4);
 }

@@ -12,13 +12,13 @@ function xgate() {
     setInterval(frame2, 5)
 
     function frame() {
-        if (pos3 < 173) {
+        if (pos3 < 160) {
             pos3++;
             elem.style.top = pos3 + 'px';
         }
     }
     function frame2() {
-        if (pos3 < 186) {
+        if (pos3 < 190) {
             pos3++;
             elem.style.top = pos3 + 'px';
 
@@ -35,7 +35,7 @@ function hadamard() {
     setInterval(frame, 1);
 
     function frame() {
-        if (pos3 < 267) {
+        if (pos3 < 275) {
             pos3++;
             elem.style.top = pos3 + 'px';
         }

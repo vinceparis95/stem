@@ -12,16 +12,19 @@ button {
 
 }
 h1 {
-    position: relative;
-    opacity:60%;
-    background: -webkit-linear-gradient( rgba(255, 61, 12, 0.82), rgba(255, 69, 0, 0.61));
+    font-size: 3em;
+    position: absolute;
+    opacity:36%;
+    background: -webkit-linear-gradient( rgba(255, 61, 12, 0.60), rgba(255, 69, 0, 0.61));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
         transform: translateY(-60px)
   }
+
 h2 {
     position: absolute;
-    opacity:19%;
+
+    opacity:81%;
     background: -webkit-linear-gradient( rgba(255, 61, 12, 0.82), rgba(255, 69, 0, 0.61));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -76,20 +79,24 @@ input {
 .animator {
     width: 180px;
     height:180px;
-    border-radius: 20%;
+    border-radius: 19%;
     position: absolute;
     background-color: rgba(163, 166, 255, 0.6);
-    opacity: 60%;
+    opacity: 36%;
     display: inline-block;
+    background: -webkit-radial-gradient(rgba(255, 0, 216, 0.60), rgba(168, 255, 0, 0.0));
+
+
 }
 .animator2 {
     width: 180px;
     height:180px;
-    border-radius: 20%;
+    border-radius: 23%;
     position: absolute;
-    background-color: rgba(163, 166, 255, 0.61);
-    opacity: 60%;
+    opacity: 36%;
     display: inline-block;
+    background: -webkit-radial-gradient(rgba(255, 0, 216, 0.60), rgba(168, 255, 0, 0.0));
+
 
 
 }
@@ -105,13 +112,14 @@ input {
 .container2 {
     width: 360px;
     height: 360px;
-    border-radius: 12%;
+    border-radius: 9%;
     position: relative;
-    background: rgba(145, 58, 255, 0.09);
     display: inline-block;
     border-style: solid;
-    border-width: 5px;
-    border-color: rgba(168, 255, 0, 0.19);
+    border-width: 3px;
+    border-color: rgba(168, 255, 0, 0.1);
+    background: -webkit-radial-gradient(rgba(145, 58, 255, 0.09), rgba(168, 255, 0, 0.19));
+
 
 
 }
@@ -124,8 +132,10 @@ input {
     display: inline-block;
     opacity: 90%;
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-color: rgba(168, 255, 0, 0.19);
+        background: -webkit-radial-gradient(rgba(168, 255, 0, 0.19), rgba(145, 58, 255, 0.09));
+
 
 }
 .container4 {
@@ -134,32 +144,47 @@ input {
     border-radius: 10%;
     position: relative;
     background: #008b2a;
-  display: inline-block;
-  left: -14px;
-  top: 19px;
-  opacity: 14%;
+    display: inline-block;
+    left: -14px;
+    top: 19px;
+    opacity: 14%;
 
     border-style: solid;
     border-width: 5px;
-    border-color: coral;
+    border-color: rgba(255, 127, 80, 0.6);
 
 }
 .container5 {
-  width: 180px;
-  height: 180px;
-  border-radius: 19%;
-  position: relative;
-  background: rgba(255, 249, 192, 0.6);
-  display: inline-block;
-  left: -14px;
-  top: 19px;
-  opacity: 19%;
+    width: 180px;
+    height: 180px;
+    border-radius: 27%;
+    position: relative;
+    background: rgba(255, 249, 192, 0.36);
+    display: inline-block;
+    left: -14px;
+    top: 19px;
+    opacity:36%;
+    border-style: solid;
+    border-width:27px;
+    border-color: rgba(255, 145, 39, 0.27);
+    transform: rotate(90deg);
+    background: -webkit-radial-gradient(rgba(255, 249, 192, 0.36), rgba(255, 145, 39, 0.36));
 
+}
+.container5b {
+    width: 180px;
+    height: 180px;
+    border-radius: 19%;
+    position: relative;
+    background: -webkit-linear-gradient(rgba(255, 249, 192, 0.6), rgba(255, 145, 39, 0.6));
+    display: inline-block;
+    left: -14px;
+    top: 19px;
+    opacity:60%;
     border-style: solid;
     border-width:27px;
     border-color: rgba(255, 145, 39, 0.6);
-
-
+    transform: rotate(90deg);
 }
 
 
@@ -230,10 +255,14 @@ input {
 }
 
 .p5Canvas {
-    color: #a8ff00;
-    border-radius: 7%;
+    border-radius: 19%;
     width: 360px;
-    opacity: 36%;
+    opacity: 27%;
+    border-style: solid;
+    border-width: 9px;
+    border-color: rgba(95, 190,0, 0.60);
+    background: -webkit-radial-gradient(rgba(255, 249, 192, 0.36), rgba(255, 145, 39, 0.36));
+
     }
 
 
@@ -257,8 +286,8 @@ input {
     height:27px;
     border-radius: 25%;
     position: relative;
-    background-color: rgba(145, 58, 255, 0.6);
-    opacity: 60%;
+    background-color: rgba(255, 0, 216, 0.36);
+    opacity: 95%;
     display: inline-block;
 }
 
