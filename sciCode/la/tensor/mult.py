@@ -12,7 +12,7 @@ import numpy as np
 vector1 = np.array([[1,0]])
 vector2 = np.array([[0,1]])
 matrix1 = np.array([[0,1],[1,0]])
-matrix2 = np.array([[1,0],[0,1]])
+matrix2 = np.array([[0,1],[1,0]])
 
 
 ##################################
@@ -42,6 +42,12 @@ tensorDotProduct = np.tensordot(matrix1, matrix2)
 
 ##################################################
 
+# Tensor mult
+
+tensormul = np.dot(matrix1,matrix2)
+
+##################################################
+
 # Kronecker product
 
 kronProduct = np.kron(matrix1, matrix2)
@@ -53,3 +59,4 @@ print("inner product:\n", innerProduct, "\n")
 print("outer product: \n", outerProduct, "\n")
 print("tensor dot:\n", tensorDotProduct, "\n")
 print("kron: \n", kronProduct)
+print("matmul:\n", tensormul)

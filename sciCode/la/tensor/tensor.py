@@ -1,49 +1,60 @@
 import numpy as np
 
-####################################
+#########################
 
-# Computing Tensors
+# Computing With Tensors
 
-####################################
+########################
+
 
 # create a scalar
 
 scalar = np.array([1])
 
-print(scalar.shape)
 
+############################
 
-#####################################
 
 # create a vector
 
 vector = np.array([1, 2, 3])
-print(vector.shape)
 
 
-######################################
+###############################
 
-# create a tensor
+# create a matrix
 
 matrix = np.array([[1, 2, 3],
                    [1, 2, 3],
                    [1, 2, 3]])
-print(matrix.shape)
 
 
-#######################################
+###############################
 
 # create a 3-D tensor
 
-tensor = np.array([[[1, 2, 3],
+tensor3D = np.array([[[1, 2, 3],
                     [1, 2, 3],
                     [1, 2, 3]],
-
                    [[1, 0, 0],
                     [0, 1, 0],
                     [0, 0, 1]]])
-print(tensor.shape)
+
+################################
+
+# # get the shape
+# print(scalar.shape,
+#       vector.shape,
+#       matrix.shape,
+#       tensor.shape)
+#
+# # get the transposes
+# print(scalar.transpose(),
+#       vector.transpose(),
+#       matrix.transpose(),
+#       tensor.transpose())
 
 
-########################################
+###########################
+
 

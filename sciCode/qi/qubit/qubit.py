@@ -3,7 +3,7 @@ import math
 
 ####################
 
-# Q u b i t
+# Q u b i t s
 
 ###########################
 
@@ -39,19 +39,3 @@ state2 = np.array([[0,0,1,0]])
 #          [ 1 ]]
 state3 = np.array([[0,0,0,1]])
 
-
-#################################
-
-# Q u a n t u m  R e g i s t e r
-
-#################################
-
-import cirq
-
-
-# create a qubit on the score
-qubit = cirq.GridQubit(0,0)
-print(qubit)
-
-
-###############################
