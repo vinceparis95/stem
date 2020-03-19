@@ -21,6 +21,7 @@
 		A0F9C431C7F6418F7FDB8EC4 /* libPods-tanna0adTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1F2B7B46B8BA963273BF66 /* libPods-tanna0adTests.a */; };
 		A708E6A7DFA468241B3BC661 /* libPods-tanna0ad-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA67BC37790FDCC61BAF8A5D /* libPods-tanna0ad-tvOS.a */; };
 		10FC198A9AFB4E9CA2B90A70 /* PressStart2P.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0008C7B594CE4BC69C8EB509 /* PressStart2P.otf */; };
+		80FBE3032A4C49CF8F8C4B23 /* Electroharmonix.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 487848A3E81D4B58915E888A /* Electroharmonix.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FA67BC37790FDCC61BAF8A5D /* libPods-tanna0ad-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tanna0ad-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB82206C75D1A5E893C9B78 /* libPods-tanna0ad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tanna0ad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0008C7B594CE4BC69C8EB509 /* PressStart2P.otf */ = {isa = PBXFileReference; name = "PressStart2P.otf"; path = "../assets/fonts/PressStart2P.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		487848A3E81D4B58915E888A /* Electroharmonix.TTF */ = {isa = PBXFileReference; name = "Electroharmonix.TTF"; path = "../assets/fonts/Electroharmonix.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			isa = "PBXGroup";
 			children = (
 				0008C7B594CE4BC69C8EB509 /* PressStart2P.otf */,
+				487848A3E81D4B58915E888A /* Electroharmonix.TTF */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				10FC198A9AFB4E9CA2B90A70 /* PressStart2P.otf in Resources */,
+				80FBE3032A4C49CF8F8C4B23 /* Electroharmonix.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

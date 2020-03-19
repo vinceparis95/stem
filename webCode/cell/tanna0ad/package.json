@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -25,11 +26,10 @@
   },
   "rnpm": {
     "assets": [
-   "./assets/fonts/"
+      "./assets/fonts/"
     ]
   },
   "jest": {
     "preset": "react-native"
   }
-
 }
