@@ -25,4 +25,3 @@ ops = [cirq.H(a), cirq.H(b),
 circuit = cirq.Circuit.from_ops(ops)
 print(circuit)
 
-
