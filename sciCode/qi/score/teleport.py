@@ -5,16 +5,7 @@ circuit.barrier()
 print(circuit.draw())
 
 
-#############################
-
-
-circuit.h(0)
-circuit.barrier()
-print(circuit.draw())
-
-
-#######################
-
+######################
 
 circuit.h(1)
 circuit.cx(1,2)
@@ -23,6 +14,14 @@ print(circuit.draw())
 
 
 #####################
+
+
+circuit.x(0)
+circuit.barrier()
+print(circuit.draw())
+
+
+######################
 
 
 circuit.cx(0,1)
