@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 const Score = {
   title: "circuit",
   qubits: [
@@ -42,24 +43,33 @@ function createScore(slide) {
             {
               height: '180px',
               width: '180px',
-              backgroundColor:'#E0E5EC',
-              boxShadow: '9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5)',
+              backgroundColor: '#E0E5EC',
+              boxShadow: '9px 9px 16px rgb(163,177,198,0.54), -9px -9px 16px rgba(255,255,255, 0.45)',
               borderRadius: '9%',
               margin: '19px',
-              padding:'19px',
-              opacity: '.39',
-              outline:'none',
+              padding: '19px',
+              opacity: '.36',
+              outline: 'none',
               fontFamily: 'Courier',
               letterSpacing: '5px',
               fontSize: '27px',
-              fontWeight:'bold',
+              fontWeight: 'bold',
               color: 'rgba(255, 136, 0,1)'
             }
-          } > add qubit < /button>    < /
-        div >
-      )
+          }
+           > add qubit < /button>    < /
+          div >
+        )
 
       }
+
+function newScore(){
+  return(
+    <div style={{height:'45px', width: '45px', backgroundColor: "blue"}}> : ) </div>
+  )
+}
+
+
 createScore(Score)
 
 export default createScore
