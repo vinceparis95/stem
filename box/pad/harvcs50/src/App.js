@@ -63,6 +63,7 @@ function createScore(slide) {
 
       }
 
+
 function newScore(){
   return(
     <div style={{height:'45px', width: '45px', backgroundColor: "blue"}}> : ) </div>
